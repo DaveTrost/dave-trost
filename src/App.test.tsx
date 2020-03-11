@@ -1,31 +1,21 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import App from './App';
+import Header from './components/Header';
+import ScrollingBio from './components/ScrollingBio';
 
-describe('Site Header', () => {
-  it('renders my name in the header', () => {
-    const { getByText } = render(<App />);
-    const headerElement = getByText('Dave Trost');
-    expect(headerElement).toBeInTheDocument();
-  });
-  it('renders 3 categories in the navigation section', () => {
-    const { getByText } = render(<App />);
-    const fullstackNav = getByText('Full Stack');
-    expect(fullstackNav).toBeInTheDocument();
-    const codeChallengesNav = getByText('Code Challenges');
-    expect(codeChallengesNav).toBeInTheDocument();
-    const computerEngineeringNav = getByText('Computer Engineering');
-    expect(computerEngineeringNav).toBeInTheDocument();
-  });
-});
-
-describe('Site Content', () => {
-  it('renders my bio in the initial state', () => {
-    const { getByText } = render(<App />);
-    const bio = getByText(/^Hi\./i);
-    const bioText = bio.textContent || '';
-    expect(bio).toBeInTheDocument();
-    expect(bioText.split(' ').length).toBeGreaterThan(50);
+describe('App contents', () => {
+  it('contains the sub-components when shallowly rendered', () => {
+    const renderer = ShallowRenderer.createRenderer();
+    renderer.render(<App />);
+    const result = renderer.getRenderOutput();
+    const shallowContents = result.props.children;
+    expect(result.type).toBe('div');
+    expect(shallowContents).toEqual((
+      <div className="appContainer">
+        <Header />
+        <ScrollingBio />
+      </div>)
+    );
   });
 });
-
