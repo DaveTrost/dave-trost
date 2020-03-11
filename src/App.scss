@@ -1,25 +1,10 @@
+@import './styles/vars.scss';
+
 .App {
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  text-align: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: calc(10px + 1vmin);
-    color: white;
+  color: var(--black);
+  background-color: var(--dark-blue);
+  .appContainer {
+    max-width: 1000px;
+    margin: auto;
   }
-
-}
-
-.App-link {
-  color: #61dafb;
 }
