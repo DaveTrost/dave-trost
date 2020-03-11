@@ -6,11 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Dave Trost</h1>
-        <div>
+        <nav>
           <h2>Full Stack</h2>
           <h2>Code Challenges</h2>
           <h2>Computer Engineering</h2>
-        </div>
+        </nav>
       </header>
     </div>
   );
