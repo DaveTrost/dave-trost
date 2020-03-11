@@ -1,0 +1,15 @@
+.Header {
+  background-color: #282c34;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(10px + 1vmin);
+    color: white;
+  }
+
+}
