@@ -13,13 +13,27 @@ function App() {
         </nav>
       </header>
       <section>
+        <h3>
+          Welcome to my coding adventures!
+        </h3>
         <p>
-          Hi. I've been writing code in one language or another since 2006.
-          I started a new adventure in coding in 2019 and plunged into the world of full stack software.
-          Along the way, I've learned that certain aspects of coding are universal: 
-          <span>The instant gratification when code goes from broken to fixed.</span>
-          <span>The momentum and product quality that comes from sharing ideas and learnings among developers.</span>
-          <span>Collaborative environments are fun!</span>
+          In the last episode, I worked my way to the top of the EDA software team. I specialized in circuit design software for radio-frequency semiconductors.
+        </p>
+        <p>
+          In this episode, I plunge into the world of full stack software ...
+        </p>
+        <p>
+          The software industry offers growth and learning opportunities galore, team-mates who inspire us to bring our full selves to our work, and meaningful work-life balance.
+          And the challenges are significant: out-dated code bases, constant technology growth and intersecting domains of responsibility. 
+          It's a tall order, but I'm up to the task. I have the same work ethic that got me through the last episode, the same sharp eye for detail, and I know that no learning curve is too steep.
+        </p>
+        <p>
+          There is a theme to this series and it's that certain aspects of coding are universal: 
+          <ul>
+            <li>We get an adrenaline boost when code goes from broken to fixed</li>
+            <li>Code quality increases from sharing ideas, questions and learnings with a team</li>
+            <li>Technical work is hard, collaboration is fun. We can build great things together!</li>
+          </ul>
         </p>
         <p>
           Let's get coding!
@@ -28,8 +42,8 @@ function App() {
       <section>
         <div>
           <p>
-            New challenges are important to me and I'm having a lot of fun practicing with the core tools of the industry. 
-            The projects below are the beginning of my explorations. 
+            New challenges are important to me. I'm having fun practicing with the tools of the industry.
+            The projects below are the beginning of my explorations.
           </p>
         </div>
         <div>
