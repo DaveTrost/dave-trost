@@ -11,11 +11,9 @@ describe('App contents', () => {
     const result = renderer.getRenderOutput();
     const shallowContents = result.props.children;
     expect(result.type).toBe('div');
-    expect(shallowContents).toEqual((
-      <div className="appContainer">
-        <Header />
-        <ScrollingBio />
-      </div>)
-    );
+    expect(shallowContents).toEqual([
+      <Header />,
+      <ScrollingBio />,
+    ]);
   });
 });

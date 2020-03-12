@@ -4,8 +4,5 @@
 .App {
   color: var(--black);
   background-color: var(--dark-blue);
-  .appContainer {
-    max-width: 1000px;
-    margin: auto;
-  }
+  min-height: 100vh;
 }

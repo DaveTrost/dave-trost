@@ -5,10 +5,8 @@ import './App.scss';
 
 const App = () => (
   <div className='App'>
-    <div className='appContainer'>
-      <Header />
-      <ScrollingBio />
-    </div>
+    <Header />
+    <ScrollingBio />
   </div>
 );
 
