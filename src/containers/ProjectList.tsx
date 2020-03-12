@@ -13,7 +13,7 @@ const projects: IProjectCard[] = [
   },
   {
     title: 'mindDrift TS',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift-TS.gif',
     description: `The same guided breathing app, re-written with Typescript.`,
     sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
     sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
@@ -36,7 +36,7 @@ const projects: IProjectCard[] = [
   },
   {
     title: 'Whiskepedia',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/maze-api.png',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/whiskepedia.gif',
     description: `Explore hundreds of bottles of whiskey according to their flavor profiles.`,
     sourceUrl: 'https://github.com/team-whiskepedia/whiskepedia',
     deployedUrl: 'https://whiskepedia.herokuapp.com/index.html'
