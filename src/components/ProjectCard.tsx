@@ -16,8 +16,8 @@ const ProjectCard = ({
   sourceUrl, 
   deployedUrl 
 }: IProjectCard) => {
-  // const handleViewSource = () => window.open(sourceUrl, '_blank');
-  // const handleVisitSite = deployedUrl ? () => window.open(deployedUrl, '_blank') : () => null;
+  const handleViewSource = () => window.open(sourceUrl, '_blank');
+  const handleVisitSite = deployedUrl ? () => window.open(deployedUrl, '_blank') : () => null;
 
   return (
     <Card className='ProjectCard'>
@@ -25,8 +25,8 @@ const ProjectCard = ({
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Button variant="primary">View Source</Button>
-        <Button variant="secondary">Visit Site</Button>
+        <Button variant="primary" onClick={handleViewSource}>View Source</Button>
+        <Button variant="secondary" onClick={handleVisitSite}>Visit Site</Button>
       </Card.Body>
     </Card>      
   );
