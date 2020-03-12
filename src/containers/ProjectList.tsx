@@ -1,13 +1,47 @@
 import React from 'react';
 import ProjectCard, { IProjectCard } from '../components/ProjectCard';
 
-const projects: IProjectCard[] = [{
-  imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgSeQQ9jv82BGb_RLI2gA0mJBjJwbdgjLXEgTXF_N8xDLnKKrd',
-  title: 'mindDrift',
-  description: `Meditation through guided breathing.`,
-  sourceUrl: 'https://github.com/mindDrift',
-  deployedUrl: 'https://mind-drift.netlify.com'
-}];
+// 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/dwellingly.png'
+
+const projects: IProjectCard[] = [
+  {
+    title: 'mindDrift',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif',
+    description: `Meditation through guided breathing.`,
+    sourceUrl: 'https://github.com/mindDrift',
+    deployedUrl: 'https://mind-drift.netlify.com'
+  },
+  {
+    title: 'mindDrift TS',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif',
+    description: `The same guided breathing app, re-written with Typescript.`,
+    sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
+    sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
+  },
+  {
+    title: 'Connect4 AI',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/connect4.png',
+    description: `A Connect4 game played against a computerized AI or against another human.`,
+    sourceUrl: 'https://www.npmjs.com/package/connect4-ai',
+    sourceUrl2: 'https://github.com/DaveTrost/connect4-ui',
+    deployedUrl: 'https://a-connect4-game.netlify.com/'
+  },
+  {
+    title: 'MAZE API',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/maze-api.png',
+    description: `The same guided breathing app, re-written with Typescript.`,
+    sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
+    sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
+    deployedUrl: 'https://a-connect4-game.netlify.com/'
+  },
+  {
+    title: 'Whiskepedia',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/maze-api.png',
+    description: `Explore hundreds of bottles of whiskey according to their flavor profiles.`,
+    sourceUrl: 'https://github.com/team-whiskepedia/whiskepedia',
+    deployedUrl: 'https://whiskepedia.herokuapp.com/index.html'
+  },
+];
 
 const ProjectList = () => {
   const cards = projects.map((props: IProjectCard, i) => (

@@ -9,16 +9,15 @@ describe('Project List content', () => {
     const result = renderer.getRenderOutput();
     const shallowContents = result.props.children;
     expect(result.type).toBe('div');
-    expect(shallowContents).toMatchInlineSnapshot(`
-      Array [
-        <ProjectCard
-          deployedUrl="https://mind-drift.netlify.com"
-          description="Meditation through guided breathing."
-          imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgSeQQ9jv82BGb_RLI2gA0mJBjJwbdgjLXEgTXF_N8xDLnKKrd"
-          sourceUrl="https://github.com/mindDrift"
-          title="mindDrift"
-        />,
-      ]
+    expect(shallowContents.length).toBeGreaterThanOrEqual(3);
+    expect(shallowContents[0]).toMatchInlineSnapshot(`
+      <ProjectCard
+        deployedUrl="https://mind-drift.netlify.com"
+        description="Meditation through guided breathing."
+        imageUrl="https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif"
+        sourceUrl="https://github.com/mindDrift"
+        title="mindDrift"
+      />
     `);
   });
 });
