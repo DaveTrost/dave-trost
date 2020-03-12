@@ -4,12 +4,12 @@ import './Skill.scss';
 export interface ISkill {
   imageUrl: string;
   altText: string;
-  vendorUrl: string;
+  infoUrl: string;
 }
 
-const Skill = ({ imageUrl, altText, vendorUrl }: ISkill) => (
+const Skill = ({ imageUrl, altText, infoUrl }: ISkill) => (
   <div className='Skill'>
-    <a href={vendorUrl} target='_blank' rel='noopener noreferrer'>
+    <a href={infoUrl} target='_blank' rel='noopener noreferrer'>
       <img src={imageUrl} alt={altText} />
     </a>
   </div>
