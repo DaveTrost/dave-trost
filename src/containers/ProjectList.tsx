@@ -29,10 +29,10 @@ const projects: IProjectCard[] = [
   {
     title: 'MAZE API',
     imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/maze-api.png',
-    description: `The same guided breathing app, re-written with Typescript.`,
-    sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
-    sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
-    deployedUrl: 'https://a-connect4-game.netlify.com/'
+    description: `A public, RESTful API serving maze puzzles`,
+    sourceUrl: 'https://github.com/maze-api',
+    sourceUrl2: 'https://github.com/maze-api',
+    deployedUrl: 'https://maze-api.herokuapp.com/'
   },
   {
     title: 'Whiskepedia',
