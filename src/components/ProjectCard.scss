@@ -1,0 +1,28 @@
+.ProjectCard {
+  min-width: 30%;
+  max-width: 300px;
+  max-height: 400px;
+  margin: 2vw;
+
+  .cardBody {
+    color: var(--dark-blue);
+    background-color: var(--white);
+
+    .cardTitle {
+      font-size: calc(12px + 2.2vmin);
+    }
+    .cardText {
+      font-size: calc(8px + 1.1vmin);
+    }
+
+    button {
+      margin-right: 10px;
+      background-color: var(--gray);
+      border-color: var(--gray);
+      color: var(--white);
+      font-size: calc(10px + 1.3vmin);
+      padding: 5px;
+    }
+  }
+  
+}
