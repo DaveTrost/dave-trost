@@ -9,7 +9,7 @@ function ScrollingBio() {
           Welcome to my coding adventures!
         </p>
         <h1 className='episodeTitle'>
-          EPISODE 2019
+          EPISODE MMXIX
         </h1>
         <sub>
           Full Stack Engineering
