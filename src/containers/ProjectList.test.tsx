@@ -7,10 +7,13 @@ describe('Project List content', () => {
     const renderer = ShallowRenderer.createRenderer();
     renderer.render(<ProjectList />);
     const result = renderer.getRenderOutput();
-    const shallowContents = result.props.children;
+    const shallowContentLevel1 = result.props.children;
+    const shallowContentLevel2 = shallowContentLevel1[1].props.children;
     expect(result.type).toBe('div');
-    expect(shallowContents.length).toBeGreaterThanOrEqual(3);
-    expect(shallowContents[0]).toMatchInlineSnapshot(`
+    expect(shallowContentLevel1[0].type).toBe('h3');
+    expect(shallowContentLevel1[1].type).toBe('div');
+    expect(shallowContentLevel2.length).toBeGreaterThanOrEqual(3);
+    expect(shallowContentLevel2[0]).toMatchInlineSnapshot(`
       <ProjectCard
         deployedUrl="https://mind-drift.netlify.com"
         description="Meditation through guided breathing."

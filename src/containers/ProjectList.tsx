@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard, { IProjectCard } from '../components/ProjectCard';
+import './ProjectList.scss';
 
 // 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/dwellingly.png'
 
@@ -49,7 +50,10 @@ const ProjectList = () => {
   ));
   return (
     <div className='appContainer'>
-      {cards}
+      <h3>Projects</h3>
+      <div className='ProjectList'>
+        {cards}
+      </div>
     </div>
   );
 }
