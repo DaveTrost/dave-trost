@@ -31,13 +31,13 @@ function ScrollingBio() {
               Success will be judged by those people I can help. 
               Customers will use the software. 
               I will put myself in their shoes and gain their perspective to guide my decisions.
-              I will help my teammates. Foremost, we will have fun while we work. 
-              I believe great accomplishments are a sign of even greater teamwork. 
-              I strive to bring my full self to the team 
-              and to foster an environment where this feels natural for all teammates.
+              My teammates and I have a shared work experience. 
+              I want to help our work be fun! 
+              I strive to bring my full self to the team and to help others do the same. 
+              I believe that big accomplishments are the result of great teamwork ... 
             </p>
             <p>
-              Now let's get coding ...
+              Let's work together!
             </p>
           </div>
         </div>
