@@ -5,6 +5,7 @@
   h3 {
     margin-left: 10px;
     color: var(--dark-blue);
+    letter-spacing: 0.05em;
     span {
       color: var(--gray);
     }
@@ -12,8 +13,8 @@
 
   .SkillList {
     padding: 30px;
-    padding-top: 5px;
-    padding-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
     display: flex;
     flex-wrap: wrap;
