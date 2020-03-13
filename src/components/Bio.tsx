@@ -18,10 +18,10 @@ function Bio() {
           I am a career-changer. 
           In the past, I worked my way to the top of EDA software engineering. 
           I specialized in circuit design software for radio-frequency semiconductors.
-          I now call the world of full stack software my career home.
-          The industry is an area of great opportunity and significant challenge. 
+          Today, I apply my coding skills in the software engineering industry.
+          This industry is an area of great opportunity and significant challenge. 
           I bring with me tools of past success: my work ethic, a sharp eye for detail, 
-          and a knowledge that no learning curve is too steep.
+          a knowledge that no learning curve is too steep (and a lot of shortcut keys!)
         </p>
         <p>
           Let's work together!
