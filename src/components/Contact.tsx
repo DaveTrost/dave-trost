@@ -4,7 +4,7 @@ import './Contact.scss';
 function Contact() {
   return (
     <div className='appContainer contactContainer'>
-      <h3>Contact</h3>
+      <h3>Get in touch</h3>
       <div className='contactList'>
         <div className='Contact'>
           <a href='https://www.linkedin.com/in/dave-trost/'>
