@@ -3,6 +3,7 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import App from './App';
 import Header from './components/Header';
 // import ScrollingBio from './components/ScrollingBio';
+import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
 import Contact from './components/Contact';
@@ -16,6 +17,7 @@ describe('App contents', () => {
     expect(result.type).toBe('div');
     expect(shallowContents).toEqual([
       <Header />,
+      <Bio />,
       <ProjectList />,
       <SkillList />,
       <Contact />,
