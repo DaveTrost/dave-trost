@@ -1,13 +1,19 @@
-.SkillList {
-  padding: 30px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
+.skillContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
 
-h3 {
-  color: var(--silver);
+  h3 {
+    color: var(--silver);
+  }
+
+  .SkillList {
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
 }

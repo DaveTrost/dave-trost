@@ -135,7 +135,7 @@ const SkillList = () => {
     <Skill key={i} { ...props } />
   ));
   return (
-    <div className='appContainer'>
+    <div className='appContainer skillContainer'>
       <h3>Skills</h3>
       <div className='SkillList'>
         {skills}
