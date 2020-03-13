@@ -1,44 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Portfolio Site
 
-## Available Scripts
+## Typescript + React
 
-In the project directory, you can run:
+I started this project using technologies with which I'm familiar because I wanted to quickly get it to a deployable state. React has been a tried and true framework for several projects of mine. Typescript, on the other hand, is new for me. This will be the first completed front end project I deploy with Typescript. In the other front-end project where I started using Typescript, I got stuck at integrating and testing Firebase. This project didn't have that level of complexity, and it went of without a hitch.
 
-### `yarn start`
+## TDD
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I practiced using 'true' TDD for this project. As in, literally, not writing component code unless there was a test in place that indicated the present code was not sufficient. I'd grade myself at 75% for sticking to the strategy. I think it was most difficult for me to use this approach when I was unsure of the content I wanted to present. I modified some tests over and over before reaching a stable state. My learning from this is to TDD the existence of a component and its larger pieces, but to leave content/implementation details out of the tests. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I encountered a philosphical question as I approached test-writing for user interaction. I decided to have project and technology hyperlinks that open in a separate tab and don't impact the state of the app. It is unclear if testing ths type of functionality is possible - it's browser-level functionality instigated at the app-level. I decided that this testing is outside the scope of the app.
 
-### `yarn test`
+I was introduced to the react-testing-library at a recent Meetup (thanks to AgilePDX's Mob Programming Workshop run by Jeff Patterson and Matthew Cochrane). I like how it encourages more specific test points than using shallow snapshot testing with Enzyme. Fortunately, there is an add-on library (react-test-renderer) that enables snapshot testing. I had one spot where a component snapshot captured all the information I wanted to test, without adding significant test fragility, and it saved me some time as well.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Color Scheme
 
-### `yarn build`
+The colors of the site are inspired by the context highlighting color theme I use in VS Code - "dark+". I pulled the hex codes from the dark+ project on Github and inserted them into my global CSS vars file. Using color themes from a code editor further inspired the design, and I added the markup language touches (like <> and </>) in the headers.
+Initially, I had a color scheme based on a photograph of dark trees and a bright, starry sky. Today, I decided I hated it (overall too dark, and with a lack of variation in the color palette). I'm glad I made the change.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Favicon
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The current favicon is a bit of artwork I created based on my initials. I used Krita to give the image a transparent background.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Create React App
 
-### `yarn eject`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## WIP: Star Wars
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Source inspiration and code for Star Wars scrolling text is from Craig Buckler [Star Wars Scrolling Text in CSS3](http://www.sitepoint.com/css3-starwars-scrolling-text/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This is an idea for putting more bling into my bio. My career story will be modified to read more like an episode in a movie series. The CSS will include a scrolling animation for the section containing the story. The same section will have 3D CSS translation to add perspective and an :after element will provide a fade-out point. The overall effect will look like the opening text of a classic Star Wars movie. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## WIP: Contact Form
 
-## Learn More
+I dislike the idea of having my email address available to the internet at large. Fortunately, there are a number of technologies that allow me to create a contact form. This way, people can still reach out, and I can get their email, and I don't have to respond with my email unless the contact is useful.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Netlify provides form submissions that can be received in my Netlify site admin panel: https://docs.netlify.com/forms/setup/#html-forms
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Netlify also provides email notifications for submitted forms: https://docs.netlify.com/forms/notifications/#email-notifications
+
+## WIP: More Pages and a Navigation Bar
+
+My initial plan for this site included some more pages with information about my adventures in Code Challenges and a page to show samples of the languages and technologies that I used in my EDA career. If that content is ever created, the site will need a navigation bar with breadcrumbs to show users around the site. I like the look of the [Tabs component](https://react-bootstrap.github.io/components/tabs/) in Bootstrap for this.
