@@ -1,12 +1,17 @@
-.ProjectList {
-  padding: 10px;
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  
-}
+.projectContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
 
-h3 {
-  color: var(--silver);
+  h3 {
+    color: var(--silver);
+  }
+  
+  .ProjectList {
+    padding: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+  }
+  
 }

@@ -49,7 +49,7 @@ const ProjectList = () => {
     <ProjectCard key={i} { ...props } />
   ));
   return (
-    <div className='appContainer'>
+    <div className='appContainer projectContainer'>
       <h3>Projects</h3>
       <div className='ProjectList'>
         {cards}
