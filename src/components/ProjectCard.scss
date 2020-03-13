@@ -2,27 +2,28 @@
   width: 100%;
   max-width: 300px;
   @media only screen and (min-width: 700px) {
-    width: 50%;    
+    width: 50%;
   }
 
   margin-bottom: 20px;
 
   .cardBody {
-    color: var(--function);
-    background-color: var(--text);
-
+    background-color: var(--text-lite);
+    
     .cardTitle {
+      color: var(--string);
       font-size: calc(10px + 2.2vmin);
     }
     .cardText {
+      color: var(--background-lite);
       font-size: calc(6px + 1.1vmin);
     }
 
     button {
       margin-right: 5px;
-      background-color: var(--symbol);
-      border-color: var(--symbol);
-      color: var(--text);
+      background-color: var(--string);
+      border-color: var(--string-lite);
+      color: var(--background-lite);
       font-size: calc(8px + 1vmin);
       padding: 5px;
     }
