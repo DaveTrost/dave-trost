@@ -1,11 +1,26 @@
 :root {
-  --black: #020104;
-  --dark-blue: #181629;
-  --gray: #27282f;
-  --dark-red: #6b1704;
-  --blue: #013d8b;
-  --silver: #d7e3f5;
-  --white: #f7fefc;
+  --black: #1E1E1E;
+  --dark-blue: #569CD6;
+  --gray: #808080;
+  --dark-red: #D16969;
+  --blue: #9CDCFE;
+  --silver: #C8C8C8;
+  --white: #C8C8C8;
+
+  --background: #1E1E1E;
+  --names:      #DCDCAA;
+  --functions:  #569CD6;
+  --vars:       #9CDCFE;
+  --comments:   #6A9955;
+  --inter-file: #C586C0;
+  --text-white: #C8C8C8;
+  --sym-gray:   #808080;
+  --strings:    #CE9178;
+  --keywords:   #D16969;
+  --other-teal: #4EC9B0;
+  --other-gold: #D7BA7D;
+  
+
 }
 
 .appContainer {
