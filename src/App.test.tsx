@@ -5,6 +5,7 @@ import Header from './components/Header';
 // import ScrollingBio from './components/ScrollingBio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
+import Contact from './components/Contact';
 
 describe('App contents', () => {
   it('contains the sub-components when shallowly rendered', () => {
@@ -17,6 +18,7 @@ describe('App contents', () => {
       <Header />,
       <ProjectList />,
       <SkillList />,
+      <Contact />,
     ]);
   });
 });
