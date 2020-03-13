@@ -15,9 +15,9 @@ describe('Skill List content', () => {
     expect(shallowContentLevel2.length).toBeGreaterThanOrEqual(7);
     expect(shallowContentLevel2[0]).toMatchInlineSnapshot(`
       <Skill
-        altText="Typescript"
         imageUrl="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png"
         infoUrl="https://www.typescriptlang.org/"
+        title="Typescript"
       />
     `);
   });
