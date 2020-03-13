@@ -35,9 +35,7 @@ This is an idea for putting more bling into my bio. My career story will be modi
 
 I dislike the idea of having my email address available to the internet at large. Fortunately, there are a number of technologies that allow me to create a contact form. This way, people can still reach out, and I can get their email, and I don't have to respond with my email unless the contact is useful.
 
-Netlify provides form submissions that can be received in my Netlify site admin panel: https://docs.netlify.com/forms/setup/#html-forms
-
-Netlify also provides email notifications for submitted forms: https://docs.netlify.com/forms/notifications/#email-notifications
+Netlify provides [form submissions](https://docs.netlify.com/forms/setup/#html-forms) that can be received in the Netlify site admin panel. Their admin system additionally provides [email notifications](https://docs.netlify.com/forms/notifications/#email-notifications) for submitted forms. I was tipped off to this Netlify feature by inspecting the source code on [Marcy Silverman's portfolio site](www.marcy-silverman.com) (Thanks Marcy!).
 
 ## WIP: More Pages and a Navigation Bar
 
