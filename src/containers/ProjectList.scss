@@ -3,8 +3,11 @@
   padding-bottom: 30px;
 
   h3 {
-    color: var(--silver);
     margin-left: 10px;
+    color: var(--dark-blue);
+    span {
+      color: var(--gray);
+    }
   }
   
   .ProjectList {

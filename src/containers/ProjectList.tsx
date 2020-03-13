@@ -50,10 +50,11 @@ const ProjectList = () => {
   ));
   return (
     <div className='appContainer projectContainer'>
-      <h3>Projects</h3>
+      <h3><span>{'<'}</span>Projects<span>{'>'}</span></h3>
       <div className='ProjectList'>
         {cards}
       </div>
+      <h3><span>{'</'}</span>Projects<span>{'>'}</span></h3>
     </div>
   );
 }
