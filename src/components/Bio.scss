@@ -3,16 +3,19 @@
   padding-bottom: 30px;
 
   h3 {
-    color: var(--silver);
     margin-left: 10px;
+    color: var(--dark-blue);
+    span {
+      color: var(--gray);
+    }
   }
 
   .Bio {
     padding: 30px;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 0;
 
-    color: var(--white);
+    color: var(--names);
 
     .secondary {
       display: none;
