@@ -54,6 +54,16 @@ const skillsData: ISkill[] = [
     infoUrl: 'https://nodejs.org/en/'
   },
   {
+    title: 'Python 3',
+    imageUrl: 'https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png',
+    infoUrl: 'https://www.python.org/download/releases/3.0/'
+  },
+  {
+    title: 'Java',
+    imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/java-43-569305.png',
+    infoUrl: 'https://www.java.com/en/'
+  },
+  {
     title: 'Express',
     imageUrl: 'https://kalvanaveen.github.io/WebDevelopmentResources.github.io/Images/Express-JS-min.png',
     infoUrl: 'https://expressjs.com/'
@@ -97,16 +107,6 @@ const skillsData: ISkill[] = [
     title: 'Netlify',
     imageUrl: 'https://temudokter.netlify.com/static/media/netlify.92b6c228.png',
     infoUrl: 'https://www.netlify.com/'
-  },
-  {
-    title: 'Python 3',
-    imageUrl: 'https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png',
-    infoUrl: 'https://www.python.org/download/releases/3.0/'
-  },
-  {
-    title: 'Java',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png',
-    infoUrl: 'https://www.java.com/en/'
   },
   {
     title: 'Shell',

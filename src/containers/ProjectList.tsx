@@ -13,13 +13,6 @@ const projects: IProjectCard[] = [
     deployedUrl: 'https://mind-drift.netlify.com'
   },
   {
-    title: 'mindDrift TS',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift-TS.gif',
-    description: `The same guided breathing app, re-written with Typescript.`,
-    sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
-    sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
-  },
-  {
     title: 'Connect4 AI',
     imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/connect4.png',
     description: `A Connect4 game played against a computerized AI or against another human.`,
@@ -41,6 +34,13 @@ const projects: IProjectCard[] = [
     description: `Explore hundreds of bottles of whiskey according to their flavor profiles.`,
     sourceUrl: 'https://github.com/team-whiskepedia/whiskepedia',
     deployedUrl: 'https://whiskepedia.herokuapp.com/index.html'
+  },
+  {
+    title: 'mindDrift TS',
+    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift-TS.gif',
+    description: `The same guided breathing app, re-written with Typescript.`,
+    sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
+    sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
   },
 ];
 
