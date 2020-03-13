@@ -1,26 +1,26 @@
 :root {
-  --black: #1E1E1E;
-  --dark-blue: #569CD6;
-  --gray: #808080;
-  --dark-red: #D16969;
-  --blue: #9CDCFE;
-  --silver: #C8C8C8;
-  --white: #C8C8C8;
-
   --background: #1E1E1E;
-  --names:      #DCDCAA;
-  --functions:  #569CD6;
-  --vars:       #9CDCFE;
-  --comments:   #6A9955;
-  --inter-file: #C586C0;
-  --text-white: #C8C8C8;
-  --sym-gray:   #808080;
-  --strings:    #CE9178;
-  --keywords:   #D16969;
-  --other-teal: #4EC9B0;
-  --other-gold: #D7BA7D;
-  
-
+  --name:       #DCDCAA;
+  --function:   #569CD6;
+  --variable:   #9CDCFE;
+  --comment:    #6A9955;
+  --import:     #C586C0;
+  --text:       #C8C8C8;
+  --symbol:     #808080;
+  --string:     #CE9178;
+  --keyword:    #D16969;
+  --css-class:  #D7BA7D;
+  --background-lite: #1E1E1EB0;
+  --name-lite:       #DCDCAAB0;
+  --function-lite:   #569CD6B0;
+  --variable-lite:   #9CDCFEB0;
+  --comment-lite:    #6A9955B0;
+  --import-lite:     #C586C0B0;
+  --text-lite:       #C8C8C8B0;
+  --symbol-lite:     #808080B0;
+  --string-lite:     #CE9178B0;
+  --keyword-lite:    #D16969B0;
+  --css-class-lite:  #D7BA7DB0;
 }
 
 .appContainer {

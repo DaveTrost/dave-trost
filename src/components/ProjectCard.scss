@@ -8,8 +8,8 @@
   margin-bottom: 20px;
 
   .cardBody {
-    color: var(--dark-blue);
-    background-color: var(--white);
+    color: var(--function);
+    background-color: var(--text);
 
     .cardTitle {
       font-size: calc(10px + 2.2vmin);
@@ -20,9 +20,9 @@
 
     button {
       margin-right: 5px;
-      background-color: var(--gray);
-      border-color: var(--gray);
-      color: var(--white);
+      background-color: var(--symbol);
+      border-color: var(--symbol);
+      color: var(--text);
       font-size: calc(8px + 1vmin);
       padding: 5px;
     }
