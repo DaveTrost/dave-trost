@@ -21,6 +21,12 @@ Initially, I had a color scheme based on a photograph of dark trees and a bright
 
 The current favicon is a bit of artwork I created based on my initials. I used Krita to give the image a transparent background.
 
+## GIF's
+
+The images for a few of my projects are animated GIF's. A Google Chrome extension called 'Capture to a Gif' was used to record website content and download it as to an animated GIF.
+
+Another useful GIF tool was an online GIF editor at [EZGIF.com](https://ezgif.com/crop).
+
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
