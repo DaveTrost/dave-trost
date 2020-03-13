@@ -9,7 +9,7 @@ function Bio() {
         <p className='primary'>
           <span>I am a full stack engineer: </span>
           I gauge success by the people I help - customers and teammates alike.
-          I put myself in the customer's shoes and gain new perspectives to guide my development.
+          I put myself in the customer's shoes to gain perspectives that guide my development.
           My teammates and I have a shared work experience. Our work should be fun! 
           I strive to bring my full self to the team and to help others do the same. 
           I believe that big accomplishments are the result of great teamwork.
