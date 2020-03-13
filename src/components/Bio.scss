@@ -16,6 +16,9 @@
     padding-bottom: 0;
 
     color: var(--names);
+    span {
+      color: var(--vars);
+    }
 
     .secondary {
       display: none;
