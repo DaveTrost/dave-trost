@@ -136,10 +136,11 @@ const SkillList = () => {
   ));
   return (
     <div className='appContainer skillContainer'>
-      <h3>Skills</h3>
+      <h3><span>{'<'}</span>Skills<span>{'>'}</span></h3>
       <div className='SkillList'>
         {skills}
       </div>
+      <h3><span>{'</'}</span>Skills<span>{'>'}</span></h3>
     </div>
   );
 }
