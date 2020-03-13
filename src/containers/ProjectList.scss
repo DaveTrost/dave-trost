@@ -1,0 +1,21 @@
+.projectContainer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h3 {
+    margin-left: 10px;
+    color: var(--dark-blue);
+    span {
+      color: var(--gray);
+    }
+  }
+  
+  .ProjectList {
+    padding: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+  }
+
+}

@@ -1,0 +1,24 @@
+.skillContainer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h3 {
+    margin-left: 10px;
+    color: var(--dark-blue);
+    letter-spacing: 0.05em;
+    span {
+      color: var(--gray);
+    }
+  }
+
+  .SkillList {
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
