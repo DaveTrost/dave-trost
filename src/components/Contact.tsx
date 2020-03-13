@@ -4,7 +4,7 @@ import './Contact.scss';
 function Contact() {
   return (
     <div className='appContainer contactContainer'>
-      <h3>Get in touch</h3>
+      <h3><span>{'<'}</span>Contact</h3>
       <div className='contactList'>
         <div className='Contact'>
           <a href='https://www.linkedin.com/in/dave-trost/'>
@@ -18,7 +18,7 @@ function Contact() {
         <div className='Contact'>
           <a href='https://github.com/DaveTrost'>
             <img 
-              src='https://lh3.googleusercontent.com/proxy/gkZr4C4Vb7Dg-z6dctdlCcm0G-zlrOr1WUfE3W4izlkAeOUVhLGymrli6ElQMoCpeSXEjC-h44QpdXnVRp95OOyQDpNYv7k8iLJUvy2BO0mfBagVNBi5LegpjyS7XKZ5jHp6OgpPc-X2IauWMJ1hv9bbdt_FXjHAinlfV1asaNeim0KZXrvh6Al9sJcZ8FDE' 
+              src='https://icons-for-free.com/iconfiles/png/512/code+collaboration+github+network+round+social+icon-1320086084536018107.png' 
               alt='Github' 
               title='Follow me on Github'
             />
@@ -34,6 +34,7 @@ function Contact() {
           </a>
         </div>
       </div>
+      <h3><span>{'/>'}</span></h3>
     </div>
   );
 }

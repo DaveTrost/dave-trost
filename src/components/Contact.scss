@@ -1,35 +1,33 @@
 .contactContainer {
+  padding-left: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
 
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
   h3 {
-    color: var(--silver);
-    margin-left: 10px;
+    display: inline;
+    margin: 0;
+
+    color: var(--dark-blue);
+    span {
+      color: var(--gray);
+    }
   }
 
   .contactList {
-    padding: 30px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
 
     .Contact {
-      width: 20%;
-      max-width: 160px;
-      min-width: 50px;
-    
-      margin-right: 10px;
-      margin-bottom: 10px;
+      display: inline;    
+      margin-left: 2vw;
+      margin-right: 2vw;
 
-      a {
-        text-decoration: none;
-      }    
       img {
-        width: 100%;
+        height: calc(40px + 1vw);
       }
     }
     
