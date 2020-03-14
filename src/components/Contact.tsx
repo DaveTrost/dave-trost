@@ -33,6 +33,15 @@ function Contact() {
             />
           </a>
         </div>
+        <div className='Contact'>
+          <a href='https://drive.google.com/open?id=1_jeRCGP5GPn3FYWVS4lqLuoGbj_K5M-0'>
+            <img 
+              src='https://cdn0.iconfinder.com/data/icons/web-seo-and-digital-marketing-7/64/140-512.png'
+              alt='Resume' 
+              title='My Resume' 
+            />
+          </a>
+        </div>
       </div>
       <h3><span>{'/>'}</span></h3>
     </div>
