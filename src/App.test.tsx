@@ -7,6 +7,7 @@ import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
 import Contact from './components/Contact';
+import Footer from './components/FooterComp';
 
 describe('App contents', () => {
   it('contains the sub-components when shallowly rendered', () => {
@@ -20,6 +21,7 @@ describe('App contents', () => {
       <ProjectList />,
       <SkillList />,
       <Contact />,
+      <Footer />,
     ]);
   });
 });

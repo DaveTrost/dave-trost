@@ -2,27 +2,48 @@
   width: 100%;
   max-width: 300px;
   @media only screen and (min-width: 700px) {
-    width: 50%;    
+    width: 50%;
   }
 
   margin-bottom: 20px;
 
-  .cardBody {
-    color: var(--dark-blue);
-    background-color: var(--white);
+  .aspectRatioContainer {    
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 60% 0 0 0; /* 100 / (w / h) => 100 / (10 / 6) => 60% */
 
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .cardBody {
+    background-color: var(--text-lite);
+    
     .cardTitle {
+      color: var(--string);
       font-size: calc(10px + 2.2vmin);
     }
     .cardText {
+      color: var(--background-lite);
       font-size: calc(6px + 1.1vmin);
     }
 
     button {
       margin-right: 5px;
-      background-color: var(--gray);
-      border-color: var(--gray);
-      color: var(--white);
+      background-color: var(--string);
+      border-color: var(--string-lite);
+      color: var(--background-lite);
       font-size: calc(8px + 1vmin);
       padding: 5px;
     }

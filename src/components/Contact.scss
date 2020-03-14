@@ -4,16 +4,16 @@
   padding-bottom: 30px;
 
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
 
   h3 {
     display: inline;
     margin: 0;
 
-    color: var(--dark-blue);
+    color: var(--function);
     span {
-      color: var(--gray);
+      color: var(--symbol);
     }
   }
 

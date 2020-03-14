@@ -5,6 +5,7 @@ import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
 import Contact from './components/Contact';
+import Footer from './components/FooterComp';
 import './App.scss';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
     <ProjectList />
     <SkillList />
     <Contact />
+    <Footer />
   </div>
 );
 

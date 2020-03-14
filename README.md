@@ -21,6 +21,12 @@ Initially, I had a color scheme based on a photograph of dark trees and a bright
 
 The current favicon is a bit of artwork I created based on my initials. I used Krita to give the image a transparent background.
 
+## GIF's
+
+The images for a few of my projects are animated GIF's. A Google Chrome extension called 'Capture to a Gif' was used to record website content and download it as to an animated GIF.
+
+Another useful GIF tool was an online GIF editor at [EZGIF.com](https://ezgif.com/crop).
+
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -35,9 +41,7 @@ This is an idea for putting more bling into my bio. My career story will be modi
 
 I dislike the idea of having my email address available to the internet at large. Fortunately, there are a number of technologies that allow me to create a contact form. This way, people can still reach out, and I can get their email, and I don't have to respond with my email unless the contact is useful.
 
-Netlify provides form submissions that can be received in my Netlify site admin panel: https://docs.netlify.com/forms/setup/#html-forms
-
-Netlify also provides email notifications for submitted forms: https://docs.netlify.com/forms/notifications/#email-notifications
+Netlify provides [form submissions](https://docs.netlify.com/forms/setup/#html-forms) that can be received in the Netlify site admin panel. Their admin system additionally provides [email notifications](https://docs.netlify.com/forms/notifications/#email-notifications) for submitted forms. I was tipped off to this Netlify feature by inspecting the source code on [Marcy Silverman's portfolio site](www.marcy-silverman.com) (Thanks Marcy!).
 
 ## WIP: More Pages and a Navigation Bar
 

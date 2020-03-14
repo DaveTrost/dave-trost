@@ -4,9 +4,9 @@
 
   h3 {
     margin-left: 10px;
-    color: var(--dark-blue);
+    color: var(--function);
     span {
-      color: var(--gray);
+      color: var(--symbol);
     }
   }
 
@@ -15,9 +15,9 @@
     padding-top: 5px;
     padding-bottom: 0;
 
-    color: var(--names);
+    color: var(--name-lite);
     span {
-      color: var(--vars);
+      color: var(--variable);
     }
 
     .secondary {

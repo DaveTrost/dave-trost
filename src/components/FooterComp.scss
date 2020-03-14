@@ -1,0 +1,12 @@
+.FooterComp {
+  margin-top: 60px;
+  margin-bottom: 0;
+  
+  font-family: sans-serif;
+  color: var(--type-lite);
+
+  p {
+    font-size: calc(0.6em + .4vw);
+    margin: 0;
+  }
+}
