@@ -22,7 +22,9 @@ const ProjectCard = ({
 }: IProjectCard) => (
   <Card className='ProjectCard'>
     <a href={deployedUrl || sourceUrl} target='_blank' rel='noopener noreferrer'>
-      <Card.Img variant='top' src={imageUrl} alt={title} />
+      <div className='aspectRatioContainer'>
+        <Card.Img variant='top' src={imageUrl} alt={title} />
+      </div>
     </a>
     <Card.Body className='cardBody'>
       <Card.Title className='cardTitle'>{title}</Card.Title>
