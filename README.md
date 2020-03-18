@@ -31,10 +31,6 @@ Another useful GIF tool was an online GIF editor at [EZGIF.com](https://ezgif.co
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Future Work: More Project Details
-
-There is a lot more information about each project that can be displayed on this site. Much of the information is already available on Github, but it is a click or three away. I want to put the project details into this site and display them in a modal that pops up when the project image is clicked - OR if the project title is clicked.
-
 ## Future Work: Star Wars
 
 Source inspiration and code for Star Wars scrolling text is from Craig Buckler [Star Wars Scrolling Text in CSS3](http://www.sitepoint.com/css3-starwars-scrolling-text/)
