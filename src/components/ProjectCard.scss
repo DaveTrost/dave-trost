@@ -37,7 +37,7 @@
     }
     .cardText {
       color: var(--background-lite);
-      font-size: calc(6px + 1.1vmin);
+      font-size: calc(8px + 1.1vmin);
     }
     .showMore {
       padding-left: 1em;
@@ -45,6 +45,7 @@
 
       color: var(--function-lite);
       text-transform: uppercase;
+      cursor: pointer;
 
       display: inline-block;
       @media only screen and (min-width: 700px) {
