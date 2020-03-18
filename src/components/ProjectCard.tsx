@@ -24,19 +24,12 @@ const ProjectCard = ({
   sourceUrl2,
   deployedUrl,
 }: IProjectCard) => {
-  const detailView = 'showDetails';
-  const [showSummary, setShowSummary] = useState(true);
-  const [detailViewClass, setDetailViewClass] = useState('');
-
-  const toggleView = () => {
-    if(showSummary) {
-      setShowSummary(false);
-      setDetailViewClass(detailView);
-    } 
-    else {
-      setShowSummary(true);
-      setDetailViewClass('');
-    }
+  const expanded = 'showDetails';
+  const [collapsed, setCollapsed] = useState(true);
+  const [expandedClass, setExpandedClass] = useState('');
+  const expandProjectCard = () => {
+    setCollapsed(false);
+    setExpandedClass(expanded);
   }
 
   return(
@@ -50,9 +43,9 @@ const ProjectCard = ({
         <Card.Title className='cardTitle'>{title}</Card.Title>
         <Card.Text className='cardText'>
           {summary}
-          {showSummary && <span className='showMore' onClick={toggleView}>show more</span>}
+          {collapsed && <span className='showMore' onClick={expandProjectCard}>show more</span>}
         </Card.Text>
-        <Card.Text className={`cardText details ${detailViewClass}`} onClick={toggleView}>
+        <Card.Text className={`cardText details ${expandedClass}`}>
           <span>{details}</span>
           <span className='technologies'>{`Technologies: ${technologies}`}</span>
         </Card.Text>
