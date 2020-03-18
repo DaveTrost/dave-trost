@@ -2,9 +2,10 @@
   width: 100%;
   max-width: 300px;
   @media only screen and (min-width: 700px) {
-    width: 50%;
+    max-width: 350px;
   }
 
+  margin: 10px;
   margin-bottom: 20px;
 
   .aspectRatioContainer {    
@@ -37,6 +38,31 @@
     .cardText {
       color: var(--background-lite);
       font-size: calc(6px + 1.1vmin);
+    }
+    .showMore {
+      padding-left: 1em;
+      font-size: 0.8em;
+
+      color: var(--function-lite);
+      text-transform: uppercase;
+
+      display: inline-block;
+      @media only screen and (min-width: 700px) {
+        display: none;
+      }
+    }
+    .details {
+      display: none;
+      @media only screen and (min-width: 700px) {
+        display: block;
+      }
+    }
+    .showDetails {
+      display: block;
+    }
+    .technologies {
+      display: block;
+      margin-top: 1em;
     }
 
     button {

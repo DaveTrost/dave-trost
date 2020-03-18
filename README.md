@@ -27,22 +27,30 @@ The images for a few of my projects are animated GIF's. A Google Chrome extensio
 
 Another useful GIF tool was an online GIF editor at [EZGIF.com](https://ezgif.com/crop).
 
+## Responsive Aspects
+
+For mobile users, my goal is to never display a single component/section that overwhelms the screen. To this end, the Bio and ProjectCard components have abbreviated mobile views. The Bio is simply truncated for mobile users. The ProjectCard component has 2 view states - collapsed and expanded. When the user clicks on the card, they are toggled between these 2 views. 
+
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## WIP: Star Wars
+## Future Work: Star Wars
 
 Source inspiration and code for Star Wars scrolling text is from Craig Buckler [Star Wars Scrolling Text in CSS3](http://www.sitepoint.com/css3-starwars-scrolling-text/)
 
 This is an idea for putting more bling into my bio. My career story will be modified to read more like an episode in a movie series. The CSS will include a scrolling animation for the section containing the story. The same section will have 3D CSS translation to add perspective and an :after element will provide a fade-out point. The overall effect will look like the opening text of a classic Star Wars movie. 
 
-## WIP: Contact Form
+## Future Work: Contact Form
 
 I dislike the idea of having my email address available to the internet at large. Fortunately, there are a number of technologies that allow me to create a contact form. This way, people can still reach out, and I can get their email, and I don't have to respond with my email unless the contact is useful.
 
 Netlify provides [form submissions](https://docs.netlify.com/forms/setup/#html-forms) that can be received in the Netlify site admin panel. Their admin system additionally provides [email notifications](https://docs.netlify.com/forms/notifications/#email-notifications) for submitted forms. I was tipped off to this Netlify feature by inspecting the source code on [Marcy Silverman's portfolio site](www.marcy-silverman.com) (Thanks Marcy!).
 
-## WIP: More Pages and a Navigation Bar
+## Future Work: Use Intersection Observer
+
+React Intersection Observer provides an indication of when a component enters the viewport. The viewport is the area of the screen visible to the user, and it changes as the user scrolls through the page. The main way I've seen this used is to delay the loading of a component until it is at the edge of visibility. This probably has some performance benefits and it has the nice side effect that on-entrance animations can actually be perceived by users.   
+
+## Future Work: More Pages and a Navigation Bar
 
 My initial plan for this site included some more pages with information about my adventures in Code Challenges and a page to show samples of the languages and technologies that I used in my EDA career. If that content is ever created, the site will need a navigation bar with breadcrumbs to show users around the site. I like the look of the [Tabs component](https://react-bootstrap.github.io/components/tabs/) in Bootstrap for this.

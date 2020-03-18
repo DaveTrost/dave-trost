@@ -13,14 +13,5 @@ describe('Project List content', () => {
     expect(shallowContentLevel1[0].type).toBe('h3');
     expect(shallowContentLevel1[1].type).toBe('div');
     expect(shallowContentLevel2.length).toBeGreaterThanOrEqual(3);
-    expect(shallowContentLevel2[0]).toMatchInlineSnapshot(`
-      <ProjectCard
-        deployedUrl="https://mind-drift.netlify.com"
-        description="Meditation through guided breathing."
-        imageUrl="https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif"
-        sourceUrl="https://github.com/mindDrift"
-        title="mindDrift"
-      />
-    `);
   });
 });
