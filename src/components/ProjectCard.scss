@@ -38,6 +38,30 @@
       color: var(--background-lite);
       font-size: calc(6px + 1.1vmin);
     }
+    .showMore {
+      padding-left: 1em;
+      
+      color: var(--function-lite);
+      
+      font-size: 0.8em;
+      text-transform: uppercase;
+      @media only screen and (min-width: 700px) {
+        display: none;
+      }
+    }
+    .details {
+      display: none;
+      @media only screen and (min-width: 700px) {
+        display: block;
+      }
+    }
+    .showDetails {
+      display: block;
+    }
+    .technologies {
+      display: block;
+      margin-top: 1em;
+    }
 
     button {
       margin-right: 5px;
