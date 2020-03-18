@@ -27,6 +27,10 @@ The images for a few of my projects are animated GIF's. A Google Chrome extensio
 
 Another useful GIF tool was an online GIF editor at [EZGIF.com](https://ezgif.com/crop).
 
+## Responsive Aspects
+
+For mobile users, my goal is to never display a single component/section that overwhelms the screen. To this end, the Bio and ProjectCard components have abbreviated mobile views. The Bio is simply truncated for mobile users. The ProjectCard component has 2 view states - collapsed and expanded. When the user clicks on the card, they are toggled between these 2 views. 
+
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -42,6 +46,10 @@ This is an idea for putting more bling into my bio. My career story will be modi
 I dislike the idea of having my email address available to the internet at large. Fortunately, there are a number of technologies that allow me to create a contact form. This way, people can still reach out, and I can get their email, and I don't have to respond with my email unless the contact is useful.
 
 Netlify provides [form submissions](https://docs.netlify.com/forms/setup/#html-forms) that can be received in the Netlify site admin panel. Their admin system additionally provides [email notifications](https://docs.netlify.com/forms/notifications/#email-notifications) for submitted forms. I was tipped off to this Netlify feature by inspecting the source code on [Marcy Silverman's portfolio site](www.marcy-silverman.com) (Thanks Marcy!).
+
+## Future Work: Use Intersection Observer
+
+React Intersection Observer provides an indication of when a component enters the viewport. The viewport is the area of the screen visible to the user, and it changes as the user scrolls through the page. The main way I've seen this used is to delay the loading of a component until it is at the edge of visibility. This probably has some performance benefits and it has the nice side effect that on-entrance animations can actually be perceived by users.   
 
 ## Future Work: More Pages and a Navigation Bar
 
