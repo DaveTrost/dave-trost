@@ -5,168 +5,84 @@
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-.ScrollingBio {
-  padding: 0; 
-  margin: 0;
+.relativeContainer {
+  position: relative;
+}
 
-  width: 100%;
-  height: 100%;
+.ScrollingBio {
+  /* this height drives some values below */
+  height: 300px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    to bottom,
+    var(--background), 
+    black 10%, 
+    black 90%, 
+    var(--background)
+  );
+
   font-family: "Droid Sans", arial, verdana, sans-serif;
   font-weight: 700;
   color: #ff6;
-  background-color: #000;
-  overflow: hidden;
 
-  p#start
-  {
-    position: relative;
-    width: 16em;
-    font-size: 200%;
-    font-weight: 400;
-    margin: 20% auto;
-    color: #4ee;
-    opacity: 0;
-    z-index: 1;
-    -webkit-animation: intro 2s ease-out;
-    -moz-animation: intro 2s ease-out;
-    -ms-animation: intro 2s ease-out;
-    -o-animation: intro 2s ease-out;
-    animation: intro 2s ease-out;
-  }
-
-  @-webkit-keyframes intro {
-    0% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  @-moz-keyframes intro {
-    0% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  @-ms-keyframes intro {
-    0% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  @-o-keyframes intro {
-    0% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  @keyframes intro {
-    0% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  .episodeTitle {
-    position: absolute;
-    width: 80vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-40vw, -50%);
-    font-size: 7em;
-    text-align: center;
-    letter-spacing: -0.05em;
-    color: #000;
-    text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
-    opacity: 0;
-    z-index: 1;
-    -webkit-animation: logo 5s ease-out 2s;
-    -moz-animation: logo 5s ease-out 2s;
-    -ms-animation: logo 5s ease-out 2s;
-    -o-animation: logo 5s ease-out 2s;
-    animation: logo 5s ease-out 2s;
-
-    sub {
-      display: block;
-      font-size: 0.7em;
-      letter-spacing: 0;
-    }
-  }
-
-  .episodeTitleOriginal {
-    position: absolute;
-    width: 2.6em;
-    left: 50%;
-    top: 25%;
-    font-size: 10em;
-    text-align: center;
-    margin-left: -1.3em;
-    line-height: 0.8em;
-    letter-spacing: -0.05em;
-    color: #000;
-    text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
-    opacity: 0;
-    z-index: 1;
-    -webkit-animation: logo 5s ease-out 2.5s;
-    -moz-animation: logo 5s ease-out 2.5s;
-    -ms-animation: logo 5s ease-out 2.5s;
-    -o-animation: logo 5s ease-out 2.5s;
-    animation: logo 5s ease-out 2.5s;
-  }
-
-  @-webkit-keyframes logo {
-    0% { -webkit-transform: scale(1); opacity: 1; }
-    50% { opacity: 1; }
-    100% { -webkit-transform: scale(0.1); opacity: 0; }
-  }
-
-  @-moz-keyframes logo {
-    0% { -moz-transform: scale(1); opacity: 1; }
-    50% { opacity: 1; }
-    100% { -moz-transform: scale(0.1); opacity: 0; }
-  }
-
-  @-ms-keyframes logo {
-    0% { -ms-transform: scale(1); opacity: 1; }
-    50% { opacity: 1; }
-    100% { -ms-transform: scale(0.1); opacity: 0; }
-  }
-
-  @-o-keyframes logo {
-    0% { -o-transform: scale(1); opacity: 1; }
-    50% { opacity: 1; }
-    100% { -o-transform: scale(0.1); opacity: 0; }
-  }
-
-  @keyframes logo {
-    0% { transform: scale(1); opacity: 1; }
-    50% { opacity: 1; }
-    100% { transform: scale(0.1); opacity: 0; }
-  }
+  cursor: default;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
 
   /* the interesting 3D scrolling stuff */
   #titles
   {
     position: absolute;
-    width: 18em;
-    height: 20em;
-    bottom: 2em;
-    left: 50%;
-    margin-left: -9em;
-    font-size: 350%;
-    text-align: justify;
+
+    /* this height is 150% the height of ScrollingBio 
+      & top should be 60% of ScrollingBio */
+    height: 450px;
+    top: -180px;
+    left: 10px;
+    right: 10px;
+
     overflow: hidden;
+
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
     -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
-    -webkit-transform: perspective(300px) rotateX(20deg);
-    -moz-transform: perspective(300px) rotateX(20deg);
-    -ms-transform: perspective(300px) rotateX(20deg);
-    -o-transform: perspective(300px) rotateX(20deg);
-    transform: perspective(300px) rotateX(20deg);
+    -webkit-transform: perspective(300px) rotateX(30deg);
+    -moz-transform: perspective(300px) rotateX(30deg);
+    -ms-transform: perspective(300px) rotateX(30deg);
+    -o-transform: perspective(300px) rotateX(30deg);
+    transform: perspective(300px) rotateX(30deg);
   }
 
-  #titles:after
-  {
+  #titles p {
+    font-size: calc(1em + 1vw);
+    text-align: justify;
+    margin: 0.8em 0;
+  }
+
+  #titles a {
+    color: #ff6;
+    text-decoration: underline;
+  }
+
+  #titlecontent {
+    position: absolute;
+    top: 200%;
+    -webkit-animation: scroll 35s linear 1s infinite;
+    -moz-animation: scroll 35s linear 1s infinite;
+    -ms-animation: scroll 35s linear 1s infinite;
+    -o-animation: scroll 35s linear 1s infinite;
+    animation: scroll 35s linear 1s infinite;
+  }
+
+  #titles:after {
     position: absolute;
     content: ' ';
     left: 0;
@@ -181,62 +97,27 @@
     pointer-events: none;
   }
 
-  #titles p
-  {
-    text-align: justify;
-    margin: 0.8em 0;
-  }
-
-  #titles p.center
-  {
-    text-align: center;
-  }
-
-  #titles a
-  {
-    color: #ff6;
-    text-decoration: underline;
-  }
-
-  #titlecontent
-  {
-    position: absolute;
-    top: 100%;
-/*
-    -webkit-animation: scroll 100s linear 4s infinite;
-    -moz-animation: scroll 100s linear 4s infinite;
-    -ms-animation: scroll 100s linear 4s infinite;
-    -o-animation: scroll 100s linear 4s infinite;
-*/
-    animation: scroll 30s linear 1s infinite;
-  }
-
   /* animation */
-/*
+  /* animation start is 150% the height of ScrollingBio */
   @-webkit-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @-moz-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @-ms-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @-o-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-*/
-
   @keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -140%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
 
 }

@@ -12,6 +12,14 @@ I encountered a philosphical question as I approached test-writing for user inte
 
 I was introduced to the react-testing-library at a recent Meetup (thanks to AgilePDX's Mob Programming Workshop run by Jeff Patterson and Matthew Cochrane). I like how it encourages more specific test points than using shallow snapshot testing with Enzyme. Fortunately, there is an add-on library (react-test-renderer) that enables snapshot testing. I had one spot where a component snapshot captured all the information I wanted to test, without adding significant test fragility, and it saved me some time as well.
 
+## Star Wars Scrolling Text Effects
+
+Source inspiration and starting code for Star Wars scrolling text is from Craig Buckler [Star Wars Scrolling Text in CSS3](http://www.sitepoint.com/css3-starwars-scrolling-text/)
+
+My bio, which shows up by default as a static text block, will also display as scrolling text after the style of the Star Was movies opening scenes. This is a showcase of my CSS skills. And, although the techniques for the transforms, animations and 3D-effects that create the scrolling and fading text were not ideated by me (credit there goes to Craig Buckler) - I did not get the look of my site for free! I mastered Craig's techniques and applied them within an encapsulated and responsive container for my site. I leveraged React's useState hook to switch the display between the static text and the scrolling animation. 
+
+Here is Craig's technique in a nutshell (it's cool). A container is created, and it contains a collection of text elements. The container has a 3D transform applied to "flatten" its perspective and give it a vanishing point. A scroll animation changes the top-position of the text elements so that they appear to scroll along the 3D perspective. The container has an :after element with a black gradient that overlays a portion of the container. The scrolling text is blacked out by this gradient before it reaches the vanishing point in true reproduction of the Star Wars visualization. Now, the container which has the 3D transform needs to be absolutely positioned in order to render the desired effects. So, a wrapper container (relatively positioned) is needed at the top level; this also establishes the area in which the animation is contained. Overflow is set to no-display on both container levels.
+
 ## Color Scheme
 
 The colors of the site are inspired by the context highlighting color theme I use in VS Code - "dark+". I pulled the hex codes from the dark+ project on Github and inserted them into my global CSS vars file. Using color themes from a code editor further inspired the design, and I added the markup language touches (like <> and </>) in the headers.
@@ -34,12 +42,6 @@ For mobile users, my goal is to never display a single component/section that ov
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-## Future Work: Star Wars
-
-Source inspiration and code for Star Wars scrolling text is from Craig Buckler [Star Wars Scrolling Text in CSS3](http://www.sitepoint.com/css3-starwars-scrolling-text/)
-
-This is an idea for putting more bling into my bio. My career story will be modified to read more like an episode in a movie series. The CSS will include a scrolling animation for the section containing the story. The same section will have 3D CSS translation to add perspective and an :after element will provide a fade-out point. The overall effect will look like the opening text of a classic Star Wars movie. 
 
 ## Future Work: Contact Form
 

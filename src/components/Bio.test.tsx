@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Bio from './Bio';
 
-describe('About Me section', () => {
+describe('Bio component', () => {
   it('renders some information about me', () => {
     const { getByText } = render(<Bio />);
     const headerElement = getByText(/Hi, /);
@@ -11,5 +11,5 @@ describe('About Me section', () => {
     expect(headerElement).toBeInTheDocument();
     expect(paragraph).toBeInTheDocument();
     expect(paragraph2).toBeInTheDocument();
-  });  
+  });
 });
