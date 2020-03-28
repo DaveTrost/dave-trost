@@ -11,10 +11,10 @@ const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => {
   return (
     <div className='ScrollingBio'>
       <div className='appContainer relativeContainer'>
-        {/* <p className='episodeLeadin'>
-          In a blog post by Craig Buckler, I discovered some "force"ful CSS techniques. They are on display here ...
-        </p> */}
-        <h1 className='episodeTitle'>
+        <p className='preEpisode episodeLeadin'>
+          The following is built purely with CSS and HTML (thank you Craig Buckler for sharing the possibility) ...
+        </p>
+        <h1 className='preEpisode episodeTitle'>
           CODE WARS
         </h1>
         <div id='titles'>
@@ -23,16 +23,16 @@ const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => {
               EPISODE {year}
             </p>
             <p>
-              It is a period of <s>civil war</s> software engineering. In this space, {mission}
+              It is a period of <s>civil war</s> software development. In my work, {mission}
             </p>
             <p>
               In the last episode, {edaBio}
             </p>
             <p>
-              In this episode, {fullstackBio} (and some Jedi mind tricks!)
+              In this episode, {fullstackBio} (and my lightsaber!)
             </p>
             <p>
-              Now let's go save the galaxy!
+              Let's join "force"s and make the galaxy a better place!
             </p>
           </div>
         </div>
