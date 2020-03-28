@@ -3,7 +3,7 @@ import './ScrollingBio.scss';
 
 const ScrollingBio = () => (
   <section className='ScrollingBio'>
-    <div className='appContainer'>
+    <div className='appContainer relativeContainer'>
       {/* <p id='start'>
         Welcome to my coding adventures!
       </p>
@@ -33,7 +33,7 @@ const ScrollingBio = () => (
             My teammates and I have a shared work experience. 
             I want to help our work be fun! 
             I strive to bring my full self to the team and to help others do the same. 
-            I believe that big accomplishments are the result of great teamwork ... 
+            I believe that big accomplishments are the result of great teamwork... 
           </p>
           <p>
             Let's work together!

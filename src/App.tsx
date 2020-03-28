@@ -10,8 +10,8 @@ import './App.scss';
 
 const App = () => (
   <div className='App'>
-    <Bio />
     <ScrollingBio />
+    <Bio />
     <ProjectList />
     <SkillList />
     <Contact />
