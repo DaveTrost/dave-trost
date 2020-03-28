@@ -9,7 +9,9 @@ export interface IProjectCard {
   details?: string;
   technologies?: string;
   sourceUrl: string;
-  sourceUrl2?: string;
+  sourceUrlTitle?: string;
+  secondaryUrl?: string;
+  secondaryUrlTitle?: string;
   deployedUrl?: string;
 }
 const buildVisitUrl: Function = (url: string) => url ? () => window.open(url, '_blank') : () => null;
@@ -21,7 +23,9 @@ const ProjectCard = ({
   details,
   technologies,
   sourceUrl,
-  sourceUrl2,
+  sourceUrlTitle,
+  secondaryUrl,
+  secondaryUrlTitle,
   deployedUrl,
 }: IProjectCard) => {
   const expanded = 'showDetails';
@@ -34,11 +38,9 @@ const ProjectCard = ({
 
   return(
     <Card className='ProjectCard'>
-      <a href={deployedUrl || sourceUrl} target='_blank' rel='noopener noreferrer'>
-        <div className='aspectRatioContainer'>
-          <Card.Img variant='top' src={imageUrl} alt={title} />
-        </div>
-      </a>
+      <div className='aspectRatioContainer'>
+        <Card.Img variant='top' src={imageUrl} alt={title} />
+      </div>
       <Card.Body className='cardBody'>
         <Card.Title className='cardTitle'>{title}</Card.Title>
         <Card.Text className='cardText'>
@@ -49,8 +51,8 @@ const ProjectCard = ({
           <span>{details}</span>
           <span className='technologies'>{`Technologies: ${technologies}`}</span>
         </Card.Text>
-        <Button variant="primary" onClick={buildVisitUrl(sourceUrl)}>Code</Button>
-        {sourceUrl2 && <Button variant="primary" onClick={buildVisitUrl(sourceUrl2)}>More Code</Button>}
+        <Button variant="primary" onClick={buildVisitUrl(sourceUrl)}>{sourceUrlTitle || 'Code'}</Button>
+        {secondaryUrl && <Button variant="primary" onClick={buildVisitUrl(secondaryUrl)}>{secondaryUrlTitle || 'More Code'}</Button>}
         {deployedUrl && <Button variant="secondary" className='cardVisitButton' onClick={buildVisitUrl(deployedUrl)}>Visit</Button>}
       </Card.Body>
     </Card>      
