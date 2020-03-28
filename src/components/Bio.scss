@@ -8,6 +8,20 @@
     span {
       color: var(--symbol);
     }
+    img {
+      margin-left: 20px;
+
+      height: 1em;
+
+      border-radius: 50%;
+      box-shadow: inset 0 0 3px 3px var(--text);
+    }
+    img:hover {
+      box-shadow: 
+        inset 0 0 5px 3px var(--text),
+        0 0 10px var(--text);
+      cursor: pointer;
+    }
   }
 
   .Bio {
