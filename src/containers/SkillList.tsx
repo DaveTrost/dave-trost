@@ -1,5 +1,6 @@
 import React from 'react';
 import Skill, { ISkill } from '../components/Skill';
+import reactlogo from '../assets/reactlogo.png';
 import './SkillList.scss';
 
 const skillsData: ISkill[] = [
@@ -25,7 +26,7 @@ const skillsData: ISkill[] = [
   },
   {
     title: 'ReactJS',
-    imageUrl: 'https://camo.githubusercontent.com/98a9b62f324b8a13275cc57dc4293f0ee315f85f/68747470733a2f2f73616e6473746f726d2e64652f5f5265736f75726365732f50657273697374656e742f333238353431366538353033623263383335346333323162636436393063663535306238623264332f52656163742d4c6f676f2e737667',
+    imageUrl: reactlogo,
     infoUrl: 'https://reactjs.org/'
   },
   {
