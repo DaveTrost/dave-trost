@@ -17,16 +17,16 @@ const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => (
       <div id='titles'>
         <div id='titlecontent'>
           <p>
-            It is a period of full stack engineering. {mission}
+            It is a period of <s>civil war</s> full stack engineering. In these consequential times, {mission}
           </p>
           <p>
             In the last episode, {edaBio}
           </p>
           <p>
-              In this episode, {fullstackBio}
+            In this episode, {fullstackBio}
           </p>
           <p>
-            Let's work together!
+            Let's go save the galaxy!
           </p>
         </div>
       </div>

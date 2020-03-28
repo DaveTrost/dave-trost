@@ -25,7 +25,7 @@ const Bio = () => {
     fullstackBio: `I apply my coding skills in the software engineering industry. 
       This industry is an area of great opportunity and significant challenge. 
       I bring with me tools of past success: a sharp eye for detail, strong problem solving & debugging skills, 
-      a knowledge that no learning curve is too steep, mentoring abilities, and a lot of keyboard shortcuts `
+      a knowledge that no learning curve is too steep, mentoring abilities, and a lot of keyboard shortcuts. `
   }
 
   return (
