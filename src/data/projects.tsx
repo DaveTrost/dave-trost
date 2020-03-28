@@ -1,9 +1,11 @@
 // 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/dwellingly.png'
 
+import mindDriftGif from '../assets/mind-drift.gif';
+
 export default [
   {
     title: 'mindDrift',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif',
+    imageUrl: mindDriftGif,
     summary: `Meditation through guided breathing.`,
     details: `Designed to be gently encouraging to its users through 
       mobile accessibility (PWA), easy-to-use interface, and a calming color palette.`,
