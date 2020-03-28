@@ -1,0 +1,18 @@
+.StaticBio {
+  padding: 30px;
+  padding-top: 5px;
+  padding-bottom: 0;
+
+  color: var(--name-lite);
+  span {
+    color: var(--variable);
+  }
+
+  .secondary {
+    display: none;
+
+    @media only screen and (min-width: 700px) {
+      display: block;
+    }
+  }
+}

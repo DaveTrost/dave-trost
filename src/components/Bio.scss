@@ -1,4 +1,4 @@
-.bioContainer {
+.Bio {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -21,25 +21,6 @@
         inset 0 0 5px 3px var(--text),
         0 0 10px var(--text);
       cursor: pointer;
-    }
-  }
-
-  .Bio {
-    padding: 30px;
-    padding-top: 5px;
-    padding-bottom: 0;
-
-    color: var(--name-lite);
-    span {
-      color: var(--variable);
-    }
-
-    .secondary {
-      display: none;
-
-      @media only screen and (min-width: 700px) {
-        display: block;
-      }
     }
   }
 }
