@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import StaticBio from './StaticBio';
 import ScrollingBio from './ScrollingBio';
+import playPause from '../assets/play-pause.png';
 import './Bio.scss';
 
 export interface IBio {
@@ -31,7 +32,12 @@ const Bio = () => {
     <section className='appContainer Bio'>
       <h3>
         <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
-        <img onClick={toggleScrolling} className='overlayTransparent' src='https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png' alt='play'/>
+        <img 
+          onClick={toggleScrolling} 
+          className={scrolling ? 'pauseSprite' : 'playSprite'}
+          src={playPause}
+          alt='play'
+        />
       </h3>
         {!scrolling && <StaticBio {...bioProps} />}
         {scrolling && <ScrollingBio {...bioProps} />}
