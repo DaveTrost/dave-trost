@@ -7,7 +7,7 @@ describe('Bio component', () => {
     const { getByText } = render(<Bio />);
     const headerElement = getByText(/Hi, /);
     const paragraph = getByText(/past success/);
-    const paragraph2 = getByText(/shared work experience/);
+    const paragraph2 = getByText(/bring my full self/);
     expect(headerElement).toBeInTheDocument();
     expect(paragraph).toBeInTheDocument();
     expect(paragraph2).toBeInTheDocument();
