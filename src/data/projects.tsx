@@ -1,15 +1,19 @@
 // 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/dwellingly.png'
 
+import mindDriftGif from '../assets/mind-drift.gif';
+
 export default [
   {
     title: 'mindDrift',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift.gif',
+    imageUrl: mindDriftGif,
     summary: `Meditation through guided breathing.`,
     details: `Designed to be gently encouraging to its users through 
       mobile accessibility (PWA), easy-to-use interface, and a calming color palette.`,
     technologies: `Javascript, React, Redux, Bootstrap, Firebase, Node, Express, MongoDB, Mongoose, Netlify, Heroku`,
     sourceUrl: 'https://github.com/mindDrift/mind-drift-fe',
-    sourceUrl2: 'https://github.com/mindDrift/mind-drift-be',
+    sourceUrlTitle: 'Frontend',
+    secondaryUrl: 'https://github.com/mindDrift/mind-drift-be',
+    secondaryUrlTitle: 'Backend',
     deployedUrl: 'https://mind-drift.netlify.com'
   },
   {
@@ -20,8 +24,10 @@ export default [
       or turn it into a true mental challenge!
       Computer AI moves are provided by an NPM library I authored.`,
     technologies: `Javascript, React, Jest, webpack, Netlify, NPM`,
-    sourceUrl: 'https://www.npmjs.com/package/connect4-ai',
-    sourceUrl2: 'https://github.com/DaveTrost/connect4-ui',
+    sourceUrl: 'https://github.com/DaveTrost/connect4-ui',
+    sourceUrlTitle: 'Frontend',
+    secondaryUrl: 'https://www.npmjs.com/package/connect4-ai',
+    secondaryUrlTitle: 'npm',
     deployedUrl: 'https://a-connect4-game.netlify.com/'
   },
   {
@@ -54,6 +60,8 @@ export default [
       Front end translation is in progress and hope to deploy this soon.`,
     technologies: `Typescript, React, Redux, Bootstrap, Firebase, Node, Express, MongoDB, Mongoose, Netlify, Heroku`,
     sourceUrl: 'https://github.com/DaveTrost/mind-drift-ts-components',
-    sourceUrl2: 'https://github.com/DaveTrost/mind-drift-be-ts',
+    sourceUrlTitle: 'Frontend',
+    secondaryUrl: 'https://github.com/DaveTrost/mind-drift-be-ts',
+    secondaryUrlTitle: 'Backend',
   },
 ];

@@ -9,7 +9,7 @@ const exampleProject: IProjectCard = {
   details: 'all about the app',
   technologies: 'tech1, tech2, etc',
   sourceUrl: 'https://github.com/mindDrift-fe',
-  sourceUrl2: 'https://github.com/mindDrift-be',
+  secondaryUrl: 'https://github.com/mindDrift-be',
   deployedUrl: 'https://mind-drift.netlify.com'
 };
 
