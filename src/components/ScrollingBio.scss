@@ -67,7 +67,7 @@
 
   #titlecontent {
     position: absolute;
-    top: 0;
+    top: 200%;
     -webkit-animation: scroll 30s linear 1s infinite;
     -moz-animation: scroll 30s linear 1s infinite;
     -ms-animation: scroll 30s linear 1s infinite;
@@ -93,25 +93,21 @@
   /* animation */
   /* animation start is 150% the height of ScrollingBio */
   @-webkit-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @-moz-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @-ms-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @-o-keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -170%; }
+    0% { top: 450px; }
+    100% { top: -150vh; }
   }
-
   @keyframes scroll {
     0% { top: 450px; }
     100% { top: -150vh; }
