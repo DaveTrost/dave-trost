@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ScrollingBio from './ScrollingBio';
+import StaticBio from './StaticBio';
 import { IBio } from './Bio';
 
 const bioProps: IBio = {
@@ -11,9 +11,9 @@ const bioProps: IBio = {
 
 const newRegex = (s: string) => new RegExp(s);
 
-describe('ScrollingBio component', () => {
-  it('renders my bio in the scrolling state', () => {
-    const { getByText } = render(<ScrollingBio {...bioProps} />);
+describe('StaticBio component', () => {
+  it('renders my bio in the static state', () => {
+    const { getByText } = render(<StaticBio {...bioProps} />);
     const missionText = getByText(newRegex(bioProps.mission));
     const edaText = getByText(newRegex(bioProps.edaBio));
     const fullstackText = getByText(newRegex(bioProps.fullstackBio));
