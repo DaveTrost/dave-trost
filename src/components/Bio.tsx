@@ -33,12 +33,14 @@ const Bio = () => {
       <div className='appContainer'>
         <h3>
           <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
+        </h3>
+        <h3>
           <img 
             onClick={toggleScrolling} 
             className={scrolling ? 'pauseSprite' : 'playSprite'}
             src={playPause}
-            alt='play'
-            />
+            alt={scrolling ? 'pause button' : 'play button'}
+          />
         </h3>
       </div>
       {scrolling ?
