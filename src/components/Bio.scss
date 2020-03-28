@@ -27,6 +27,8 @@
       }
     }
 
+    /* How to make a foreground image into a sprite comes from css-tricks: 
+      https://css-tricks.com/spriting-img/ */
     img.playSprite {
       object-position: 0.04em 0;
     }
