@@ -14,7 +14,14 @@
   height: 300px;
 
   overflow: hidden;
-  background: linear-gradient(black, var(--background));
+  
+  background: linear-gradient(
+    to bottom,
+    var(--background), 
+    black 10%, 
+    black 90%, 
+    var(--background)
+  );
 
   font-family: "Droid Sans", arial, verdana, sans-serif;
   font-weight: 700;
