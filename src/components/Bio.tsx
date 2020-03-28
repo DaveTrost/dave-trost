@@ -29,19 +29,27 @@ const Bio = () => {
   }
 
   return (
-    <section className='appContainer Bio'>
-      <h3>
-        <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
-        <img 
-          onClick={toggleScrolling} 
-          className={scrolling ? 'pauseSprite' : 'playSprite'}
-          src={playPause}
-          alt='play'
-        />
-      </h3>
-        {!scrolling && <StaticBio {...bioProps} />}
-        {scrolling && <ScrollingBio {...bioProps} />}
-      <h3><span>{'</'}</span>Hi<span>{'>'}</span></h3>
+    <section className='Bio'>
+      <div className='appContainer'>
+        <h3>
+          <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
+          <img 
+            onClick={toggleScrolling} 
+            className={scrolling ? 'pauseSprite' : 'playSprite'}
+            src={playPause}
+            alt='play'
+            />
+        </h3>
+      </div>
+      {scrolling ?
+        <ScrollingBio {...bioProps} /> :
+        <StaticBio {...bioProps} />
+      }
+      <div className='appContainer'>
+        <h3>
+          <span>{'</'}</span>Hi<span>{'>'}</span>
+        </h3>
+      </div>
     </section>
   );
 }

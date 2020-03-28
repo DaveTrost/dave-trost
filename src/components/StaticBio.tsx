@@ -3,7 +3,7 @@ import { IBio } from './Bio';
 import './StaticBio.scss';
 
 const StaticBio = ({mission, edaBio, fullstackBio}: IBio) => (
-  <div className='StaticBio'>
+  <div className='StaticBio appContainer'>
     <p className='primary'>
       <span>I am a full stack engineer: </span>
       {mission}

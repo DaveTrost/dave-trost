@@ -3,7 +3,7 @@ import { IBio } from './Bio';
 import './ScrollingBio.scss';
 
 const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => (
-  <section className='ScrollingBio'>
+  <div className='ScrollingBio'>
     <div className='appContainer relativeContainer'>
       {/* <p id='start'>
         Welcome to my coding adventures!
@@ -16,15 +16,22 @@ const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => (
       </sub> */}
       <div id='titles'>
         <div id='titlecontent'>
-          <p>It is a period of full stack engineering.</p>
-          <p>{mission}</p>
-          <p>In the last episode, {edaBio}</p>
-          <p>In this episode, {fullstackBio}</p>
-          <p>Let's work together!</p>
+          <p>
+            It is a period of full stack engineering. {mission}
+          </p>
+          <p>
+            In the last episode, {edaBio}
+          </p>
+          <p>
+              In this episode, {fullstackBio}
+          </p>
+          <p>
+            Let's work together!
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 );
 
 export default ScrollingBio;
