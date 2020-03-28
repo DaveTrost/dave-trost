@@ -11,7 +11,7 @@ const StaticBio = ({mission, edaBio, fullstackBio}: IBio) => (
     <p className='secondary'>
       <span>I am a career-changer: </span>
       In the past, {edaBio}
-      Today, {fullstackBio}
+      Today, {fullstackBio} (and lots of keyboard shortcuts!)
     </p>
     <p>
       <span>Let's work together!</span>
