@@ -1,6 +1,9 @@
-// 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/dwellingly.png'
-
+// import dwellingly from '../assets/dwellingly.png';
 import mindDriftGif from '../assets/mind-drift.gif';
+import connect4 from '../assets/connect4.png';
+import mazeApi from '../assets/maze-api.png';
+import whiskepedia from '../assets/whiskepedia.gif';
+import mindDriftTS from '../assets/mind-drift-TS.gif';
 
 export default [
   {
@@ -18,7 +21,7 @@ export default [
   },
   {
     title: 'Connect4 AI',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/connect4.png',
+    imageUrl: connect4,
     summary: `A Connect4 game played against a computerized AI or against another human.`,
     details: `Multiple difficulty settings make this game easy to learn 
       or turn it into a true mental challenge!
@@ -32,7 +35,7 @@ export default [
   },
   {
     title: 'MAZE API',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/maze-api.png',
+    imageUrl: mazeApi,
     summary: `A public, RESTful API serving maze puzzles`,
     details: `Mazes are created using a selection of recursive algorithms. 
       Users can sign up, receive a key, and request mazes with specific parameters. 
@@ -43,7 +46,7 @@ export default [
   },
   {
     title: 'Whiskepedia',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/whiskepedia.gif',
+    imageUrl: whiskepedia,
     summary: `Explore hundreds of bottles of whiskey according to their flavor profiles.`,
     details: `Our database is seeded with Whiskey data which we migrated from the open-access WhiskeyProject. 
       Our server adds search and sort functionality to the data. 
@@ -54,7 +57,7 @@ export default [
   },
   {
     title: 'mindDrift TS',
-    imageUrl: 'https://github.com/DaveTrost/dave-trost/raw/master/src/assets/mind-drift-TS.gif',
+    imageUrl: mindDriftTS,
     summary: `The same guided breathing app, re-written with Typescript.`,
     details: `Backend translation and refactor is complete.
       Front end translation is in progress and hope to deploy this soon.`,
