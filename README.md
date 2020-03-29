@@ -49,6 +49,8 @@ I dislike the idea of having my email address available to the internet at large
 
 Netlify provides [form submissions](https://docs.netlify.com/forms/setup/#html-forms) that can be received in the Netlify site admin panel. Their admin system additionally provides [email notifications](https://docs.netlify.com/forms/notifications/#email-notifications) for submitted forms. I was tipped off to this Netlify feature by inspecting the source code on [Marcy Silverman's portfolio site](www.marcy-silverman.com) (Thanks Marcy!).
 
+Once this is complete, make the "let's work together" a link to the contact form
+
 ## Future Work: Use Intersection Observer
 
 React Intersection Observer provides an indication of when a component enters the viewport. The viewport is the area of the screen visible to the user, and it changes as the user scrolls through the page. The main way I've seen this used is to delay the loading of a component until it is at the edge of visibility. This probably has some performance benefits and it has the nice side effect that on-entrance animations can actually be perceived by users.   
