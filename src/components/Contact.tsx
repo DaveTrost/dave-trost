@@ -1,5 +1,10 @@
 import React from 'react';
 import './Contact.scss';
+import emailIcon from '../assets/email-icon.png';
+import linkedinIcon from '../assets/linkedin-icon.png';
+import githubIcon from '../assets/github-contact-icon.png';
+import resumeIcon from '../assets/resume-icon.webp';
+
 
 function Contact() {
   return (
@@ -9,7 +14,7 @@ function Contact() {
         <div className='Contact'>
           <a href='https://www.linkedin.com/in/dave-trost/'>
             <img 
-              src='https://icons.iconarchive.com/icons/martz90/circle/512/linkedin-icon.png' 
+              src={linkedinIcon}
               alt='LinkedIn' 
               title='Connect with me on LinkedIn' 
             />
@@ -18,7 +23,7 @@ function Contact() {
         <div className='Contact'>
           <a href='https://github.com/DaveTrost'>
             <img 
-              src='https://icons-for-free.com/iconfiles/png/512/code+collaboration+github+network+round+social+icon-1320086084536018107.png' 
+              src={githubIcon}
               alt='Github' 
               title='Follow me on Github'
             />
@@ -27,7 +32,7 @@ function Contact() {
         <div className='Contact'>
           <a href='mailto:davetrost@gmail.com'>
             <img 
-              src='https://techline.com/wp-content/uploads/2019/12/email-icon.png' 
+              src={emailIcon}
               alt='Email' 
               title='Email me' 
             />
@@ -36,7 +41,7 @@ function Contact() {
         <div className='Contact'>
           <a href='https://drive.google.com/open?id=1_jeRCGP5GPn3FYWVS4lqLuoGbj_K5M-0'>
             <img 
-              src='https://cdn0.iconfinder.com/data/icons/web-seo-and-digital-marketing-7/64/140-512.png'
+              src={resumeIcon}
               alt='Resume' 
               title='My Resume' 
             />
