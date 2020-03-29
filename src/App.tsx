@@ -3,7 +3,7 @@ import React from 'react';
 import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
-import Contact from './components/Contact';
+import ContactSection from './components/ContactSection';
 import Footer from './components/FooterComp';
 import './App.scss';
 
@@ -12,7 +12,7 @@ const App = () => (
     <Bio />
     <ProjectList />
     <SkillList />
-    <Contact />
+    <ContactSection />
     <Footer />
   </div>
 );

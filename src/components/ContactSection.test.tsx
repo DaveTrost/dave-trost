@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Contact from './Contact';
+import ContactSection from './ContactSection';
 
-describe('Contact Me section', () => {
+describe('Contact Section component', () => {
   it('renders 3 links to contact me', () => {
-    const { getByAltText } = render(<Contact />);
+    const { getByAltText } = render(<ContactSection />);
     const contactOne = getByAltText('LinkedIn');
     const contactTwo = getByAltText('Github');
     const contactThree = getByAltText('Email');

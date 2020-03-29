@@ -1,12 +1,12 @@
 import React from 'react';
-import './Contact.scss';
 import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import githubIcon from '../assets/github-contact-icon.png';
 import resumeIcon from '../assets/resume-icon.webp';
+import './ContactSection.scss';
 
 
-function Contact() {
+function ContactSection() {
   return (
     <div className='appContainer contactContainer'>
       <h3><span>{'<'}</span>Contact</h3>
@@ -53,4 +53,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactSection;

@@ -6,7 +6,7 @@ import App from './App';
 import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
-import Contact from './components/Contact';
+import Contact from './components/ContactSection';
 import Footer from './components/FooterComp';
 
 describe('App contents', () => {
