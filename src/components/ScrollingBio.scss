@@ -48,7 +48,7 @@
     right: 10%;
 
     color: #4ee;
-    font-size: calc(20px + 2vw);
+    font-size: calc(20px + 2vmin);
     line-height: 1.1em;
     font-weight: 400;
 
@@ -136,11 +136,11 @@
   #titlecontent {
     position: absolute;
     top: 200%;
-    -webkit-animation: scroll 40s linear 4.5s infinite;
-    -moz-animation: scroll 40s linear 4.5s infinite;
-    -ms-animation: scroll 40s linear 4.5s infinite;
-    -o-animation: scroll 40s linear 4.5s infinite;
-    animation: scroll 40s linear 4.5s infinite;
+    -webkit-animation: scroll 45s linear 4.5s infinite;
+    -moz-animation: scroll 45s linear 4.5s infinite;
+    -ms-animation: scroll 45s linear 4.5s infinite;
+    -o-animation: scroll 45s linear 4.5s infinite;
+    animation: scroll 45s linear 4.5s infinite;
   }
 
   #titles:after {
