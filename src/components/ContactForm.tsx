@@ -37,8 +37,8 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
             <h3>Get In Touch!</h3>
           </div>
         </div>
-        <form id='contact-form'>
-          <div className='messages'></div>
+        <form name='contact-form' method='post'>
+          <input type='hidden' name='form-name' value='contact-form' />
           <div className='controls'>
             <div className='row justify-content-center'>
               <div className='col-sm-8 col-md-4'>
