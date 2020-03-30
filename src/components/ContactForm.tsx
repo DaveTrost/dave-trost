@@ -17,7 +17,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
     handleClose();
   }
   const handleSubmit: IOnSubmitHandler = event => {
-    event.preventDefault();
+    // event.preventDefault();
     closeForm();
   }
   const cancelForm: IOnClickHandler = ({target}) => {
