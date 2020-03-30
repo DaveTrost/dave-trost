@@ -9,14 +9,8 @@
   
   .formArea {
     z-index: 2;
-    margin-top: 40vh;
+    margin-top: 50vh;
     transform: translate(0, -50%);
-
-    @media only screen and (max-height: 700px) {
-      @media only screen and (orientation: landscape) {
-        margin-top: 50vh;
-      }
-    }
 
     min-height: 50vh;
     padding: 5px;
@@ -39,6 +33,15 @@
       @media only screen and (min-width: 700px) {
         height: 8em;
       }  
+    }
+
+    label {
+      color: var(--css-class-lite)
+    }
+
+    .bumpUpward {
+      margin-top: -0.5em;
+      margin-bottom: 0.5em;
     }
   }
 
