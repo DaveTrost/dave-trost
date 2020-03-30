@@ -4,7 +4,7 @@ import ContactSection from './ContactSection';
 
 describe('Contact Section component', () => {
   it('renders 3 links to contact me', () => {
-    const { getByAltText } = render(<ContactSection />);
+    const { getByAltText } = render(<ContactSection handleContactMe={() => 0} />);
     const contactOne = getByAltText('LinkedIn');
     const contactTwo = getByAltText('Github');
     const contactThree = getByAltText('Email');
