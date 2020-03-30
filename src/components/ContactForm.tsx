@@ -34,7 +34,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
       <div className='appContainer formArea'>
         <div className='row justify-content-center'>
           <div className='col-sm-8'>
-            <h3>THIS FORM IS INCOMPLETE! USE EMAIL LINK BELOW!!!</h3> {/* 'Get In Touch!' */}
+            <h3>Get In Touch!</h3>
           </div>
         </div>
         <form name='contact-form' method='post'>
@@ -89,11 +89,8 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
                 <input 
                   className='btn btn-send contactSubmitButton'
                   type='submit' 
-                  value='DO NOT USE'  // 'Send message'
+                  value='Send message' 
                 />
-                <button>
-                  <a href='mailto:davetrost@gmail.com'>USE THIS:  Email Me</a>
-                </button>
               </div>
             </div>
           </div>
