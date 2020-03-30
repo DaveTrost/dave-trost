@@ -22,6 +22,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
   }
   const cancelForm: IOnClickHandler = ({target}) => {
     if((target as HTMLDivElement).className.includes(ContactFormClassName)) {
+      closeForm();
     }
   }
 
@@ -92,6 +93,17 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
             </div>
             <div className='row justify-content-center'>
               <div className='col-sm-8'>
+                <div className='form-check bumpUpward'>
+                  <input 
+                    className='form-check-input' 
+                    id='copy-submitter'
+                    name='copy-submitter'
+                    type='checkbox' 
+                    />
+                  <label className='form-check-label' htmlFor='copy-submitter'>
+                    Send me a copy
+                  </label>
+                </div>
                 <input 
                   className='btn btn-send contactSubmitButton'
                   type='submit' 

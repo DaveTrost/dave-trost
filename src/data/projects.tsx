@@ -1,3 +1,4 @@
+import { IProjectCard } from '../components/ProjectCard';
 // import dwellingly from '../assets/dwellingly.png';
 import mindDriftGif from '../assets/mind-drift.gif';
 import connect4 from '../assets/connect4.png';
@@ -5,7 +6,7 @@ import mazeApi from '../assets/maze-api.png';
 import whiskepedia from '../assets/whiskepedia.gif';
 import mindDriftTS from '../assets/mind-drift-TS.gif';
 
-export default [
+const projectsData: IProjectCard[] = [
   {
     title: 'mindDrift',
     imageUrl: mindDriftGif,
@@ -68,3 +69,5 @@ export default [
     secondaryUrlTitle: 'Backend',
   },
 ];
+
+export default projectsData;
