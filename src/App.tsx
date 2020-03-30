@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
  // import Header from './components/Header';
 import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
@@ -12,19 +11,12 @@ import './App.scss';
 const App = () => {
   const [showContactForm, setShowContactForm] = useState(false);
 
-  const openContactForm = () => {
-    setShowContactForm(true);
-    const modalEle = document.querySelector('.ContactForm');
-    if(modalEle) disableBodyScroll(modalEle);
-  }
-  const closeContactForm = () => {
-    setShowContactForm(false);
-    clearAllBodyScrollLocks();
-  }
+  const openContactForm = () => setShowContactForm(true);
+  const closeContactForm = () => setShowContactForm(false);
 
   return (
     <div className='App'>
-      <ContactForm display={showContactForm} handleCancel={closeContactForm} />
+      <ContactForm isDisplayed={showContactForm} handleClose={closeContactForm} />
       <Bio />
       <ProjectList />
       <SkillList />

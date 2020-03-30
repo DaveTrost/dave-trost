@@ -1,24 +1,35 @@
-import React, { MouseEvent } from 'react';
+import React, { useEffect } from 'react';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import './ContactForm.scss';
+import { IOnClickHandler } from '../types/types';
 
 export interface IContactForm {
-  display: Boolean;
-  handleCancel: Function;
-  handleSubmit?: Function;
+  isDisplayed: Boolean;
+  handleClose: Function;
 }
 
-const ContactForm = ({display, handleCancel}: IContactForm) => {
+const ContactFormClassName = 'ContactForm'
 
-  const cancelForm = ({target}: MouseEvent) => {
-    if((target as HTMLDivElement).className.includes('ContactForm')) {
-      handleCancel();
+const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
+
+  const closeForm: IOnClickHandler = ({target}) => {
+    if((target as HTMLDivElement).className.includes(ContactFormClassName)) {
+      clearAllBodyScrollLocks();
+      handleClose();
     }
   }
 
+  useEffect(() => {
+    if(isDisplayed) {
+      const modalEle = document.querySelector(`.${ContactFormClassName}`);
+      if(modalEle) disableBodyScroll(modalEle);
+    }
+  }, [isDisplayed]);
+
   return (
     <section 
-      className={`ContactForm ${display ? 'visible' : 'hidden'}`}
-      onClick={cancelForm}
+      className={`${ContactFormClassName} ${isDisplayed ? 'visible' : 'hidden'}`}
+      onClick={closeForm}
     >
       <div className='appContainer formArea'>
         <div className='row justify-content-center'>
