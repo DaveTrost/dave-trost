@@ -1,12 +1,16 @@
 import React from 'react';
+import { IOnClickHandler } from '../types/types';
 import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import githubIcon from '../assets/github-contact-icon.png';
 import resumeIcon from '../assets/resume-icon.webp';
 import './ContactSection.scss';
 
+interface IContactSection {
+  handleContactMe: IOnClickHandler;
+}
 
-function ContactSection() {
+function ContactSection({handleContactMe}: IContactSection) {
   return (
     <div className='appContainer contactContainer'>
       <h3><span>{'<'}</span>Contact</h3>

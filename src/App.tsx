@@ -26,10 +26,9 @@ const App = () => {
     <div className='App'>
       <ContactForm display={showContactForm} handleCancel={closeContactForm} />
       <Bio />
-      <button onClick={openContactForm}>contact me</button>
       <ProjectList />
       <SkillList />
-      <ContactSection />
+      <ContactSection handleContactMe={openContactForm} />
       <Footer />
     </div>
   );
