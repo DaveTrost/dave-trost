@@ -38,7 +38,7 @@ const ProjectCard = ({
 
   return(
     <Card className='ProjectCard'>
-      <div className='aspectRatioContainer'>
+      <div className='aspectRatioContainer' onClick={expandProjectCard}>
         <Card.Img variant='top' src={imageUrl} alt={title} />
       </div>
       <Card.Body className='cardBody'>

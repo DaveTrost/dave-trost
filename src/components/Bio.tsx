@@ -22,10 +22,9 @@ const Bio = () => {
       We can help people by being people 🙂 `,
     edaBio: `I worked my way to the top of EDA software engineering. 
       I specialized in automation scripts for circuit design software. `,
-    fullstackBio: `I apply my coding skills in software engineering. 
-      This industry is full of opportunity and challenges. 
-      I bring with me the tools of past success: a sharp eye for detail, strong problem solving & debugging skills, 
-      a knowledge that no learning curve is too steep, mentoring abilities, `
+    fullstackBio: `software engineering provides new challenge and opportunity. 
+      I have the tools for success: an eye for detail, problem solving, mentoring, 
+      the knowledge that no learning curve is too steep `
   }
 
   return (
