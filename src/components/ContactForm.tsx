@@ -34,7 +34,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
       <div className='appContainer formArea'>
         <div className='row justify-content-center'>
           <div className='col-sm-8'>
-            <h3>THIS FORM IS INCOMPLETE! USE EMAIL LINK BELOW!!!</h3>  //'Get In Touch!'
+            <h3>THIS FORM IS INCOMPLETE! USE EMAIL LINK BELOW!!!</h3> {/* 'Get In Touch!' */}
           </div>
         </div>
         <form name='contact-form' method='post'>
