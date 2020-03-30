@@ -22,6 +22,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
   }
   const cancelForm: IOnClickHandler = ({target}) => {
     if((target as HTMLDivElement).className.includes(ContactFormClassName)) {
+      closeForm();
     }
   }
 
