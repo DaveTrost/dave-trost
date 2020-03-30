@@ -34,13 +34,13 @@ function ContactSection({handleContactMe}: IContactSection) {
           </a>
         </div>
         <div className='Contact'>
-          <a href='mailto:davetrost@gmail.com'>
+          <button onClick={handleContactMe}>
             <img 
               src={emailIcon}
               alt='Email' 
               title='Email me' 
             />
-          </a>
+          </button>
         </div>
         <div className='Contact'>
           <a href='https://drive.google.com/open?id=1_jeRCGP5GPn3FYWVS4lqLuoGbj_K5M-0'>
