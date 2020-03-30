@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { IOnClickHandler, IOnSubmitHandler } from '../types/types';
 import './ContactForm.scss';
-import { IOnClickHandler } from '../types/types';
 
 export interface IContactForm {
   isDisplayed: Boolean;
@@ -12,10 +12,16 @@ const ContactFormClassName = 'ContactForm'
 
 const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
 
-  const closeForm: IOnClickHandler = ({target}) => {
+  const closeForm = () => {
+    clearAllBodyScrollLocks();
+    handleClose();
+  }
+  const handleSubmit: IOnSubmitHandler = event => {
+    event.preventDefault();
+    closeForm();
+  }
+  const cancelForm: IOnClickHandler = ({target}) => {
     if((target as HTMLDivElement).className.includes(ContactFormClassName)) {
-      clearAllBodyScrollLocks();
-      handleClose();
     }
   }
 
@@ -29,7 +35,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
   return (
     <section 
       className={`${ContactFormClassName} ${isDisplayed ? 'visible' : 'hidden'}`}
-      onClick={closeForm}
+      onClick={cancelForm}
     >
       <div className='appContainer formArea'>
         <div className='row justify-content-center'>
@@ -37,7 +43,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
             <h3>Get In Touch!</h3>
           </div>
         </div>
-        <form name='contact-form' method='post'>
+        <form name='contact-form' method='post' onSubmit={handleSubmit}>
           <input type='hidden' name='form-name' value='contact-form' />
           <div className='controls'>
             <div className='row justify-content-center'>
