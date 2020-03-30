@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
- // import Header from './components/Header';
 import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
