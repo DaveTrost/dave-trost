@@ -36,4 +36,82 @@
       object-position: -1.06em 0;
     }
   }
+
+
+
+
+  /* CSS typing animation */
+  /* From my code pen: https://codepen.io/davetrost/pen/ExjqQMK?editors=1100 */
+  h1 {
+    position: relative;
+    float: left;
+    color: #d7b94c;
+    font-family: 'Inconsolata', Consolas, monospace;
+    font-size: 4em;
+  }
+  .type span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1d1f20;
+    width: 100%;
+    border-left: .1em solid transparent;
+    -webkit-animation: typing 2s steps(8) forwards,
+                       cursor 1s 2.5 forwards;
+    animation: typing 2s steps(8) forwards,
+               cursor 1s 2.5 forwards;
+  }
+  .type-slowly span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1d1f20;
+    width: 100%;
+    border-left: .1em solid transparent;
+    -webkit-animation: typing 4s 2.5s steps(5, start) forwards,
+                       cursor 1s 2.5s 5;
+    animation: typing 5s 2.5s steps(5, start) forwards,
+               cursor 1s 2.5s 5;
+  }
+  .type-slowly span::before{
+    content: "";
+    font-size: 0.5em;
+    color: #black;
+    
+    overflow-x: visible;
+    white-space: nowrap;
+    
+    background-color: grey;
+    animation: predictive 3s;
+    animation-delay: 2.6s;
+  }
+  /* Animation */
+  @-webkit-keyframes typing{
+    from { width: 100%;}
+    to { width: 0;}
+  }
+  @-webkit-keyframes cursor{
+    50% { border-color: white;}
+  }
+  @keyframes typing{
+    from{ width: 100%;}
+    to{ width: 0;}
+  }
+  @keyframes cursor{
+    0% { border-color: white;}
+    50% { border-color: transparent;}
+    100% { border-color: white;}
+  }
+  @keyframes predictive{
+    0% { content: "etailed";}
+    33% { content: "etailed";}
+    35% { content: "rn helpful";}
+    66% { content: "rn helpful";}
+    70% { content: "id Bowie??";}
+    97% { content: "id Bowie??";}
+    100% { content: "";}
+  }
+  
+
+
 }
