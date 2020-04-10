@@ -10,7 +10,12 @@ export interface ISkill {
 const Skill = ({ imageUrl, title, infoUrl }: ISkill) => (
   <div className='Skill'>
     <a href={infoUrl} target='_blank' rel='noopener noreferrer'>
-      <img src={imageUrl} alt={title} title={title} />
+      <figure>
+        <div className='square'>
+          <img src={imageUrl} alt={title} title={title} />
+        </div>
+        <figcaption>{title}</figcaption>
+      </figure>
     </a>
   </div>
 );

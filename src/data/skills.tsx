@@ -18,13 +18,14 @@ import githubLogo from '../assets/github-contact-icon.png';
 import shellLogo from '../assets/shell.png';
 import cplusplusLogo from '../assets/C++_Logo.png';
 import nodejsIcon from '../assets/nodejsIcon.svg';
-import sqlIcon from '../assets/sql-badge.webp';
-import herokuIcon from '../assets/heroku.webp';
+import sqlIcon from '../assets/sql-badge.png';
+import herokuIcon from '../assets/heroku.png';
 import netlifyIcon from '../assets/netlify.png';
 import vbIcon from '../assets/VB_Logo.png';
 import perlIcon from '../assets/perl-icon.svg';
+import flaskLogo from '../assets/flaskLogo.png';
 
-const skillsData: ISkill[] = [
+export const languageSkills: ISkill[] = [
   {
     title: 'Typescript',
     imageUrl: typescriptLogo,
@@ -46,26 +47,6 @@ const skillsData: ISkill[] = [
     infoUrl: 'https://www.w3.org/Style/CSS/'
   },
   {
-    title: 'ReactJS',
-    imageUrl: reactLogo,
-    infoUrl: 'https://reactjs.org/'
-  },
-  {
-    title: 'Redux',
-    imageUrl: reduxLogo,
-    infoUrl: 'https://redux.js.org/'
-  },
-  {
-    title: 'React-Bootstrap',
-    imageUrl: bootstrapLogo,
-    infoUrl: 'https://react-bootstrap.github.io/'
-  },
-  {
-    title: 'MaterializeCSS',
-    imageUrl: materializeLogo,
-    infoUrl: 'https://materializecss.com/'
-  },
-  {
     title: 'NodeJS',
     imageUrl: nodejsIcon,
     infoUrl: 'https://nodejs.org/en/'
@@ -79,51 +60,6 @@ const skillsData: ISkill[] = [
     title: 'Java',
     imageUrl: javaLogo,
     infoUrl: 'https://www.java.com/en/'
-  },
-  {
-    title: 'Express',
-    imageUrl: expressLogo,
-    infoUrl: 'https://expressjs.com/'
-  },
-  {
-    title: 'MongoDB',
-    imageUrl: mongoDbLogo,
-    infoUrl: 'https://www.mongodb.com/'
-  },
-  {
-    title: 'Mongoose',
-    imageUrl: mongooseLogo,
-    infoUrl: 'https://mongoosejs.com/'
-  },
-  {
-    title: 'SQL',
-    imageUrl: sqlIcon,
-    infoUrl: 'https://en.wikipedia.org/wiki/SQL'
-  },
-  {
-    title: 'PostgreSQL',
-    imageUrl: postgresLogo,
-    infoUrl: 'https://www.postgresql.org/'
-  },
-  {
-    title: 'Jest',
-    imageUrl: jestLogo,
-    infoUrl: 'https://jestjs.io/'
-  },
-  {
-    title: 'Github',
-    imageUrl: githubLogo,
-    infoUrl: 'https://github.com/'
-  },
-  {
-    title: 'Heroku',
-    imageUrl: herokuIcon,
-    infoUrl: 'https://www.heroku.com/'
-  },
-  {
-    title: 'Netlify',
-    imageUrl: netlifyIcon,
-    infoUrl: 'https://www.netlify.com/'
   },
   {
     title: 'Shell',
@@ -144,7 +80,84 @@ const skillsData: ISkill[] = [
     title: 'Perl',
     imageUrl: perlIcon,
     infoUrl: 'https://www.perl.org/'
+  }
+];
+
+export const frontendSkills: ISkill[] = [
+  {
+    title: 'ReactJS',
+    imageUrl: reactLogo,
+    infoUrl: 'https://reactjs.org/'
+  },
+  {
+    title: 'Redux',
+    imageUrl: reduxLogo,
+    infoUrl: 'https://redux.js.org/'
+  },
+  {
+    title: 'Bootstrap',
+    imageUrl: bootstrapLogo,
+    infoUrl: 'https://react-bootstrap.github.io/'
+  },
+  {
+    title: 'Materialize',
+    imageUrl: materializeLogo,
+    infoUrl: 'https://materializecss.com/'
   },
 ];
 
-export default skillsData;
+export const backendSkills: ISkill[] = [
+  {
+    title: 'Express',
+    imageUrl: expressLogo,
+    infoUrl: 'https://expressjs.com/'
+  },
+  {
+    title: 'Flask',
+    imageUrl: flaskLogo,
+    infoUrl: 'https://palletsprojects.com/p/flask/'
+  },
+  {
+    title: 'PostgreSQL',
+    imageUrl: postgresLogo,
+    infoUrl: 'https://www.postgresql.org/'
+  },
+  {
+    title: 'Mongoose',
+    imageUrl: mongooseLogo,
+    infoUrl: 'https://mongoosejs.com/'
+  },
+  {
+    title: 'SQL',
+    imageUrl: sqlIcon,
+    infoUrl: 'https://en.wikipedia.org/wiki/SQL'
+  },
+  {
+    title: 'MongoDB',
+    imageUrl: mongoDbLogo,
+    infoUrl: 'https://www.mongodb.com/'
+  },
+];
+
+export const otherSkills: ISkill[] = [
+  {
+    title: 'Jest',
+    imageUrl: jestLogo,
+    infoUrl: 'https://jestjs.io/'
+  },
+  {
+    title: 'Github',
+    imageUrl: githubLogo,
+    infoUrl: 'https://github.com/'
+  },
+  {
+    title: 'Heroku',
+    imageUrl: herokuIcon,
+    infoUrl: 'https://www.heroku.com/'
+  },
+  {
+    title: 'Netlify',
+    imageUrl: netlifyIcon,
+    infoUrl: 'https://www.netlify.com/'
+  },
+];
