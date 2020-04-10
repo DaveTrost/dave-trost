@@ -53,11 +53,11 @@
     font-weight: 400;
 
     opacity: 0;
-    -webkit-animation: intro 2s ease-out;
-    -moz-animation: intro 2s ease-out;
-    -ms-animation: intro 2s ease-out;
-    -o-animation: intro 2s ease-out;
-    animation: intro 2s ease-out;
+    -webkit-animation: intro 3s ease-out;
+    -moz-animation: intro 3s ease-out;
+    -ms-animation: intro 3s ease-out;
+    -o-animation: intro 3s ease-out;
+    animation: intro 3s ease-out;
   }
 
   .episodeTitle {
@@ -77,11 +77,11 @@
       2px 2px 0 #ff6;
     
     opacity: 0;
-    -webkit-animation: logo 5s ease-out 2.5s;
-    -moz-animation: logo 5s ease-out 2.5s;
-    -ms-animation: logo 5s ease-out 2.5s;
-    -o-animation: logo 5s ease-out 2.5s;
-    animation: logo 5s ease-out 2.5s;
+    -webkit-animation: logo 5s ease-out 3.5s;
+    -moz-animation: logo 5s ease-out 3.5s;
+    -ms-animation: logo 5s ease-out 3.5s;
+    -o-animation: logo 5s ease-out 3.5s;
+    animation: logo 5s ease-out 3.5s;
   }
 
   /* the interesting 3D scrolling stuff */
@@ -136,11 +136,11 @@
   #titlecontent {
     position: absolute;
     top: 200%;
-    -webkit-animation: scroll 45s linear 4.5s infinite;
-    -moz-animation: scroll 45s linear 4.5s infinite;
-    -ms-animation: scroll 45s linear 4.5s infinite;
-    -o-animation: scroll 45s linear 4.5s infinite;
-    animation: scroll 45s linear 4.5s infinite;
+    -webkit-animation: scroll 60s linear 5.5s infinite;
+    -moz-animation: scroll 60s linear 5.5s infinite;
+    -ms-animation: scroll 60s linear 5.5s infinite;
+    -o-animation: scroll 60s linear 5.5s infinite;
+    animation: scroll 60s linear 5.5s infinite;
   }
 
   #titles:after {
@@ -163,23 +163,23 @@
   /* Scroll animation - note: start point should be 150% the height of ScrollingBio */
   @-webkit-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -150vh; }
+    100% { top: -180vh; }
   }
   @-moz-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -150vh; }
+    100% { top: -180vh; }
   }
   @-ms-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -150vh; }
+    100% { top: -180vh; }
   }
   @-o-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -150vh; }
+    100% { top: -180vh; }
   }
   @keyframes scroll {
     0% { top: 450px; }
-    100% { top: -150vh; }
+    100% { top: -180vh; }
   }
 
   /* Fade in animation for intro */
