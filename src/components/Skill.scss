@@ -1,16 +1,28 @@
 .Skill {
-  height: 3em;
-  max-height: 80px;
-  min-height: 30px;
-
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 5px;
+  margin-bottom: 2px;
 
   a {
-    text-decoration: none;
-  }
+    font-family: sans-serif;
+    color: var(--comment);
 
-  img {
-    height: 100%;
+    figure {
+      .square {
+        width: calc(2.5em + 1vw);
+        height: calc(2.5em + 1vw);
+        img {
+          width: 100%;
+          margin-top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+      figcaption {
+        margin-top: 4px;
+        text-align: center;
+        font-size: calc(0.6em + .3vw);
+        text-decoration: none;
+      } 
+    }
+
   }
 }

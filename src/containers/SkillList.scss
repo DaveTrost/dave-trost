@@ -15,16 +15,19 @@
   .SkillList {
     
     .SkillCategory {
-      padding-left: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+      padding: 10px;
+      padding-left: 50px;
 
-      h3.categoryHeader {
-        padding-right: 20px;
+      .categoryHeader {
         margin-left: -20px;
-
+        margin-top: 0;
         color: var(--name-lite)
+      }
+
+      .skillElements {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
       }
   
     }

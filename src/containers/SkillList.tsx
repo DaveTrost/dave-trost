@@ -15,8 +15,10 @@ const SkillCategory = ({name, skills}: ISkillCategory) => {
   return (
     <div className='SkillCategory'>
       <h3 className='categoryHeader'><span>{'<'}</span>{name}</h3>
-      {skillElements}
-      <h3><span>{'/>'}</span></h3>
+      <div className='skillElements'>
+        {skillElements}
+      </div>
+      <h3 className='categoryHeader'><span>{'/>'}</span></h3>
     </div>
   );
 }
