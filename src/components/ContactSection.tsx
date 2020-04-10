@@ -3,7 +3,7 @@ import { IOnClickHandler } from '../types/types';
 import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import githubIcon from '../assets/github-contact-icon.png';
-import resumeIcon from '../assets/resume-icon.webp';
+import resumeIcon from '../assets/resume-icon.png';
 import './ContactSection.scss';
 
 interface IContactSection {
