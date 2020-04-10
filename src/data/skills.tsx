@@ -23,6 +23,7 @@ import herokuIcon from '../assets/heroku.webp';
 import netlifyIcon from '../assets/netlify.png';
 import vbIcon from '../assets/VB_Logo.png';
 import perlIcon from '../assets/perl-icon.svg';
+import flaskLogo from '../assets/flaskLogo.png';
 
 export const languageSkills: ISkill[] = [
   {
@@ -110,6 +111,11 @@ export const backendSkills: ISkill[] = [
     title: 'Express',
     imageUrl: expressLogo,
     infoUrl: 'https://expressjs.com/'
+  },
+  {
+    title: 'Flask',
+    imageUrl: flaskLogo,
+    infoUrl: 'https://palletsprojects.com/p/flask/'
   },
   {
     title: 'PostgreSQL',
