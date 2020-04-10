@@ -95,12 +95,12 @@ export const frontendSkills: ISkill[] = [
     infoUrl: 'https://redux.js.org/'
   },
   {
-    title: 'React-Bootstrap',
+    title: 'Bootstrap',
     imageUrl: bootstrapLogo,
     infoUrl: 'https://react-bootstrap.github.io/'
   },
   {
-    title: 'MaterializeCSS',
+    title: 'Materialize',
     imageUrl: materializeLogo,
     infoUrl: 'https://materializecss.com/'
   },
