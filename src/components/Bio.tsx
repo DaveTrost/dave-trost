@@ -29,7 +29,7 @@ const Bio = () => {
   }
 
   return (
-    <section className='Bio'>
+    <section className='animated fadeInUp Bio'>
       <div className='appContainer'>
         <h3 className='monospace'>
           <BracketL />Background<BracketR />

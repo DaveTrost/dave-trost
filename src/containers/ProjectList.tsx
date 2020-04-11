@@ -13,7 +13,7 @@ const ProjectList = ({title, projects}: IProjectList) => {
     <ProjectCard key={i} { ...props } />
   ));
   return (
-    <div className='appContainer projectContainer'>
+    <div className='animated fadeInUp appContainer projectContainer'>
       <h3 className='monospace'>
       <BracketL />{title}<BracketR />
       </h3>

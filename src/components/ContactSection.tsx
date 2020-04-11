@@ -13,7 +13,7 @@ interface IContactSection {
 
 function ContactSection({handleContactMe}: IContactSection) {
   return (
-    <div className='appContainer contactContainer'>
+    <div className='animated fadeInUp appContainer contactContainer'>
       <h3 className='monospace'>
         <BracketL /> Contact
       </h3>

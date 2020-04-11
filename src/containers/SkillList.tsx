@@ -14,7 +14,7 @@ const SkillCategory = ({name, skills}: ISkillCategory) => {
     <Skill key={i} { ...props } />
   ));
   return (
-    <div className='SkillCategory'>
+    <div className='animated fadeInUp SkillCategory'>
       <h3 className='categoryHeader monospace'>
         <BracketL />{name}
       </h3>
