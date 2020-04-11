@@ -2,7 +2,8 @@ import React from 'react';
 import './Mission.scss';
 import { BracketL, BracketR, Slash } from './AngleBrackets';
 
-const enterAfterTyping = 'animated fadeInUp delay-7s';
+export const typingAnimationDuration = 7;
+const enterAfterTyping = `animated fadeInUp delay-${typingAnimationDuration}s`;
 
 const Mission = () => (
   <section className='Mission'>
@@ -18,9 +19,11 @@ const Mission = () => (
       <p className={`${enterAfterTyping}`}>
         I write software as an avenue to help others. 
         The software helps the customers, and that motivates my work.
-        But if I'm honest with myself, software is about the connections I make while building it. 
-        I love that development brings us together, and we collaborate - about the code, the product, its impact on lives ... 
-        So if you code, or use software, or live life, I'm glad to help!
+        And it's more than that. 
+        For me, software is about the connections I make while building it. 
+        I love how development brings people together and offers a platform for us to collaborate - 
+        about the code, the product, and its impact on lives. 
+        So if you code, or use software, or live life, I'm glad to help! 
       </p>
       <h3 className={`monospace ${enterAfterTyping}`}>
         <BracketL /><Slash />
