@@ -32,7 +32,7 @@ const ScrollingBio = ({edaBio, fullstackBio}: IBio) => {
               {fullstackBio} 
             </p>
             <p>
-              By our forces combined, we can the galaxy a better place!
+              By our forces combined, we can make the galaxy a better place!
             </p>
           </div>
         </div>
