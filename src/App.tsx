@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Mission from './components/Mission';
 import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
 import SkillList from './containers/SkillList';
@@ -16,9 +17,10 @@ const App = () => {
   return (
     <div className='App'>
       <ContactForm isDisplayed={showContactForm} handleClose={closeContactForm} />
-      <Bio />
+      <Mission />
       <ProjectList />
       <SkillList />
+      <Bio />
       <ContactSection handleContactMe={openContactForm} />
       <Footer />
     </div>
