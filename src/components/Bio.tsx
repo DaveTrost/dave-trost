@@ -32,8 +32,6 @@ const Bio = () => {
       <div className='appContainer'>
         <h3>
           <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
-          <h1 className='type'>Hi, I'm&nbsp;<span>&nbsp;</span></h1>
-          <h1 className='type-slowly'>Dave&nbsp;<span>&nbsp;</span></h1>
         </h3>
         <h3>
           <img 
