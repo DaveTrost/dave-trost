@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Mission from './components/Mission';
 import Bio from './components/Bio';
 import ProjectList from './containers/ProjectList';
-import { personalProjects } from './data/projects';
+import { volunteerProjects, personalProjects } from './data/projects';
 import SkillList from './containers/SkillList';
 import ContactSection from './components/ContactSection';
 import ContactForm from './components/ContactForm';
@@ -19,6 +19,7 @@ const App = () => {
     <div className='App'>
       <ContactForm isDisplayed={showContactForm} handleClose={closeContactForm} />
       <Mission />
+      <ProjectList title='Volunteer Work' projects={volunteerProjects} />
       <ProjectList title='Projects' projects={personalProjects} />
       <SkillList />
       <Bio />
