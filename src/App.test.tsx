@@ -15,9 +15,10 @@ describe('App contents', () => {
           handleClose={[Function]}
           isDisplayed={false}
         />,
-        <Bio />,
+        <Mission />,
         <ProjectList />,
         <SkillList />,
+        <Bio />,
         <ContactSection
           handleContactMe={[Function]}
         />,
