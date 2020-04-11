@@ -9,11 +9,15 @@ const ProjectList = () => {
   ));
   return (
     <div className='appContainer projectContainer'>
-      <h3><span>{'<'}</span>Projects<span>{'>'}</span></h3>
+      <h3 className='monospace'>
+        <span>{'<'}</span>Projects<span>{'>'}</span>
+      </h3>
       <div className='ProjectList'>
         {projects}
       </div>
-      <h3><span>{'</'}</span>Projects<span>{'>'}</span></h3>
+      <h3 className='monospace'>
+        <span>{'</'}</span>Projects<span>{'>'}</span>
+      </h3>
     </div>
   );
 }

@@ -22,7 +22,7 @@ const Mission = () => (
           So if you code, or use software, or live life, I'm glad to help!
         </p>
       </text>
-      <h3>
+      <h3 className='monospace'>
         <BracketL /><Slash />
         Hi
         <BracketR />

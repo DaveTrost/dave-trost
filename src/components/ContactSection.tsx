@@ -13,7 +13,9 @@ interface IContactSection {
 function ContactSection({handleContactMe}: IContactSection) {
   return (
     <div className='appContainer contactContainer'>
-      <h3><span>{'<'}</span>Contact</h3>
+      <h3 className='monospace'>
+        <span>{'<'}</span>Contact
+      </h3>
       <div className='contactList'>
         <div className='Contact'>
           <a href='https://www.linkedin.com/in/dave-trost/'>
@@ -52,7 +54,9 @@ function ContactSection({handleContactMe}: IContactSection) {
           </a>
         </div>
       </div>
-      <h3><span>{'/>'}</span></h3>
+      <h3 className='monospace'>
+        <span>{'/>'}</span>
+      </h3>
     </div>
   );
 }

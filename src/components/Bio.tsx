@@ -30,7 +30,7 @@ const Bio = () => {
   return (
     <section className='Bio'>
       <div className='appContainer'>
-        <h3>
+        <h3 className='monospace'>
           <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
         </h3>
         <h3>
@@ -47,7 +47,7 @@ const Bio = () => {
         <StaticBio {...bioProps} />
       }
       <div className='appContainer'>
-        <h3>
+        <h3 className='monospace'>
           <span>{'</'}</span>Hi<span>{'>'}</span>
         </h3>
       </div>

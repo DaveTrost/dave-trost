@@ -14,25 +14,33 @@ const SkillCategory = ({name, skills}: ISkillCategory) => {
   ));
   return (
     <div className='SkillCategory'>
-      <h3 className='categoryHeader'><span>{'<'}</span>{name}</h3>
+      <h3 className='categoryHeader monospace'>
+        <span>{'<'}</span>{name}
+      </h3>
       <div className='skillElements'>
         {skillElements}
       </div>
-      <h3 className='categoryHeader'><span>{'/>'}</span></h3>
+      <h3 className='categoryHeader monospace'>
+        <span>{'/>'}</span>
+      </h3>
     </div>
   );
 }
 
 const SkillList = () => (
   <div className='appContainer skillContainer'>
-  <h3><span>{'<'}</span>Skills<span>{'>'}</span></h3>
+  <h3 className='monospace'>
+    <span>{'<'}</span>Skills<span>{'>'}</span>
+  </h3>
   <div className='SkillList'>
     <SkillCategory name='Languages' skills={languageSkills} />
     <SkillCategory name='Frontend' skills={frontendSkills} />
     <SkillCategory name='Backend' skills={backendSkills} />
     <SkillCategory name='Tools' skills={otherSkills} />
   </div>
-  <h3><span>{'</'}</span>Skills<span>{'>'}</span></h3>
+  <h3 className='monospace'>
+    <span>{'</'}</span>Skills<span>{'>'}</span>
+  </h3>
 </div>
 );
 
