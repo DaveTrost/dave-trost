@@ -4,21 +4,33 @@
 
   h3 {
     margin-left: 10px;
-    color: var(--function);
     letter-spacing: 0.05em;
+
+    color: var(--function);
     span {
       color: var(--symbol);
     }
   }
 
   .SkillList {
-    padding: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+    .SkillCategory {
+      padding: 10px;
+      padding-left: 50px;
 
+      .categoryHeader {
+        margin-left: -20px;
+        margin-top: 0;
+        color: var(--name-lite)
+      }
+
+      .skillElements {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+  
+    }
+
+  }
 }
