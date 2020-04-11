@@ -24,6 +24,7 @@ import netlifyIcon from '../assets/netlify.png';
 import vbIcon from '../assets/VB_Logo.png';
 import perlIcon from '../assets/perl-icon.svg';
 import flaskLogo from '../assets/flaskLogo.png';
+import sqlalchemyLogo from '../assets/sqlalchemyLogo.png';
 
 export const languageSkills: ISkill[] = [
   {
@@ -121,6 +122,11 @@ export const backendSkills: ISkill[] = [
     title: 'PostgreSQL',
     imageUrl: postgresLogo,
     infoUrl: 'https://www.postgresql.org/'
+  },
+  {
+    title: 'SQLAlchemy',
+    imageUrl: sqlalchemyLogo,
+    infoUrl: 'https://www.sqlalchemy.org/'
   },
   {
     title: 'Mongoose',
