@@ -1,4 +1,5 @@
 import React from 'react';
+import { BracketL, Slash, BracketR } from './AngleBrackets';
 import { IOnClickHandler } from '../types/types';
 import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
@@ -14,7 +15,7 @@ function ContactSection({handleContactMe}: IContactSection) {
   return (
     <div className='appContainer contactContainer'>
       <h3 className='monospace'>
-        <span>{'<'}</span>Contact
+        <BracketL /> Contact
       </h3>
       <div className='contactList'>
         <div className='Contact'>
@@ -55,7 +56,7 @@ function ContactSection({handleContactMe}: IContactSection) {
         </div>
       </div>
       <h3 className='monospace'>
-        <span>{'/>'}</span>
+        <Slash /><BracketR />
       </h3>
     </div>
   );

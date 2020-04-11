@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard, { IProjectCard } from '../components/ProjectCard';
+import { BracketL, BracketR, Slash } from '../components/AngleBrackets';
 import projectsData from '../data/projects';
 import './ProjectList.scss';
 
@@ -10,13 +11,13 @@ const ProjectList = () => {
   return (
     <div className='appContainer projectContainer'>
       <h3 className='monospace'>
-        <span>{'<'}</span>Projects<span>{'>'}</span>
+        <BracketL />Projects<BracketR />
       </h3>
       <div className='ProjectList'>
         {projects}
       </div>
       <h3 className='monospace'>
-        <span>{'</'}</span>Projects<span>{'>'}</span>
+        <BracketL /><Slash />Projects<BracketR />
       </h3>
     </div>
   );

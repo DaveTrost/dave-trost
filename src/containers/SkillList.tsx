@@ -1,5 +1,6 @@
 import React from 'react';
 import Skill, { ISkill } from '../components/Skill';
+import { BracketL, Slash, BracketR } from '../components/AngleBrackets';
 import { languageSkills, frontendSkills, backendSkills, otherSkills } from '../data/skills';
 import './SkillList.scss';
 
@@ -15,13 +16,13 @@ const SkillCategory = ({name, skills}: ISkillCategory) => {
   return (
     <div className='SkillCategory'>
       <h3 className='categoryHeader monospace'>
-        <span>{'<'}</span>{name}
+        <BracketL />{name}
       </h3>
       <div className='skillElements'>
         {skillElements}
       </div>
       <h3 className='categoryHeader monospace'>
-        <span>{'/>'}</span>
+        <Slash /><BracketR />
       </h3>
     </div>
   );
@@ -30,7 +31,7 @@ const SkillCategory = ({name, skills}: ISkillCategory) => {
 const SkillList = () => (
   <div className='appContainer skillContainer'>
   <h3 className='monospace'>
-    <span>{'<'}</span>Skills<span>{'>'}</span>
+    <BracketL />Skills<BracketR />
   </h3>
   <div className='SkillList'>
     <SkillCategory name='Languages' skills={languageSkills} />
@@ -39,7 +40,7 @@ const SkillList = () => (
     <SkillCategory name='Tools' skills={otherSkills} />
   </div>
   <h3 className='monospace'>
-    <span>{'</'}</span>Skills<span>{'>'}</span>
+    <BracketL /><Slash />Skills<BracketR />
   </h3>
 </div>
 );

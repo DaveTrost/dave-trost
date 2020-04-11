@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BracketL, BracketR, Slash } from './AngleBrackets';
 import StaticBio from './StaticBio';
 import ScrollingBio from './ScrollingBio';
 import playPause from '../assets/play-pause.png';
@@ -31,7 +32,7 @@ const Bio = () => {
     <section className='Bio'>
       <div className='appContainer'>
         <h3 className='monospace'>
-          <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
+          <BracketL />Hi, I'm Dave<BracketR />
         </h3>
         <h3>
           <img 
@@ -48,7 +49,7 @@ const Bio = () => {
       }
       <div className='appContainer'>
         <h3 className='monospace'>
-          <span>{'</'}</span>Hi<span>{'>'}</span>
+          <BracketL /><Slash />Hi<BracketR />
         </h3>
       </div>
     </section>
