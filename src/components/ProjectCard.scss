@@ -17,9 +17,6 @@
     padding: 60% 0 0 0; /* 100 / (w / h) => 100 / (10 / 6) => 60% */
 
     cursor: pointer;
-    @media only screen and (min-width: 700px) {
-      cursor: default;
-    }
   
     img {
       display: block;
@@ -53,15 +50,9 @@
       cursor: pointer;
 
       display: inline-block;
-      @media only screen and (min-width: 700px) {
-        display: none;
-      }
     }
     .details {
       display: none;
-      @media only screen and (min-width: 700px) {
-        display: block;
-      }
     }
     .showDetails {
       display: block;

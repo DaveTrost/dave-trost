@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import ProjectCard, { IProjectCard } from './ProjectCard';
 
-const exampleProject: IProjectCard = {
+export const exampleProject: IProjectCard = {
   imageUrl: 'web address',
   title: 'mindDrift',
   summary: `Meditation through guided breathing.`,

@@ -31,25 +31,32 @@ const ProjectCard = ({
   const expanded = 'showDetails';
   const [collapsed, setCollapsed] = useState(true);
   const [expandedClass, setExpandedClass] = useState('');
-  const expandProjectCard = () => {
-    setCollapsed(false);
-    setExpandedClass(expanded);
+  const toggleCardDetails = () => {
+    if(collapsed) {
+      setCollapsed(false);
+      setExpandedClass(expanded);
+    } 
+    else {
+      setCollapsed(true);
+      setExpandedClass('');
+    }
   }
 
   return(
     <Card className='ProjectCard'>
-      <div className='aspectRatioContainer' onClick={expandProjectCard}>
+      <div className='aspectRatioContainer' onClick={toggleCardDetails}>
         <Card.Img variant='top' src={imageUrl} alt={title} />
       </div>
       <Card.Body className='cardBody'>
         <Card.Title className='cardTitle'>{title}</Card.Title>
         <Card.Text className='cardText'>
           {summary}
-          {collapsed && <span className='showMore' onClick={expandProjectCard}>show more</span>}
+          {collapsed && <span className='showMore' onClick={toggleCardDetails}>show more</span>}
         </Card.Text>
         <Card.Text className={`cardText details ${expandedClass}`}>
           <span>{details}</span>
           <span className='technologies'>{`Technologies: ${technologies}`}</span>
+          {!collapsed && <span className='showMore' onClick={toggleCardDetails}>show less</span>}
         </Card.Text>
         <Button variant="primary" onClick={buildVisitUrl(sourceUrl)}>{sourceUrlTitle || 'Code'}</Button>
         {secondaryUrl && <Button variant="primary" onClick={buildVisitUrl(secondaryUrl)}>{secondaryUrlTitle || 'More Code'}</Button>}

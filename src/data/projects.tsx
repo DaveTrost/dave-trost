@@ -1,12 +1,29 @@
 import { IProjectCard } from '../components/ProjectCard';
-// import dwellingly from '../assets/dwellingly.png';
+import dwellingly from '../assets/dwellingly.png';
 import mindDriftGif from '../assets/mind-drift.gif';
 import connect4 from '../assets/connect4.png';
 import mazeApi from '../assets/maze-api.png';
 import whiskepedia from '../assets/whiskepedia.gif';
 import mindDriftTS from '../assets/mind-drift-TS.gif';
 
-const projectsData: IProjectCard[] = [
+export const volunteerProjects: IProjectCard[] = [
+  {
+    title: 'Code for PDX - Dwellingly',
+    imageUrl: dwellingly,
+    summary: `Social Workers and Property Managers connect to house people in need.`,
+    details: `Code for PDX is a Code for America Brigade using the web as a platform for local government and community service. 
+      The Dwellingly App provides a dashboard for Social Workers who are combating local housing challenges. 
+      Here they can coordinate with property owners, manage tentants, and track issues. 
+      This is a new project commissioned by the City of Portland, release date TBD.`,
+    technologies: `Javascript, React, Jest, react-testing-library, Fortawesome, Python, Flask, SQLAlchemy, SQLite3, PostgreSQL, Heroku`,
+    sourceUrl: 'https://github.com/codeforpdx/dwellingly-app',
+    sourceUrlTitle: 'Frontend',
+    secondaryUrl: 'https://github.com/codeforpdx/dwellinglybackend',
+    secondaryUrlTitle: 'Backend',
+  },
+];
+
+export const personalProjects: IProjectCard[] = [
   {
     title: 'mindDrift',
     imageUrl: mindDriftGif,
@@ -69,5 +86,3 @@ const projectsData: IProjectCard[] = [
     secondaryUrlTitle: 'Backend',
   },
 ];
-
-export default projectsData;
