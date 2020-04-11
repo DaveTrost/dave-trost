@@ -18,9 +18,9 @@ const Bio = () => {
     edaBio: `My past experiences include 13 years of writing automation scripts in the semiconductor industry. 
       This work taught me strong problem solving skills, a focus on details and (especially) how to handle learning curves. 
       Each EDA software platform had its own proprietary scripting language and programming interface. 
-      I became an export in four platforms - one at a time. 
-      I got good at research, reading the docs, and knowing how to ask for help.
-      Now, I can handle any learning curve I need to!`,
+      I became an expert in five of these platforms to keep up with technology needs.
+      I got really good at research, reading the docs, experiments, and knowing how to ask for help.
+      Now, I can handle any learning curve I need to.`,
     fullstackBio: `I have been through some learning curves in the software industry.
       I learned the MERN stack through the training program at Alchemy Code Lab. 
       I am self-taught in Typescript for frontend and backend work. 
