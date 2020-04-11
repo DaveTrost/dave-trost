@@ -3,7 +3,7 @@ import ProjectCard, { IProjectCard } from '../components/ProjectCard';
 import { BracketL, BracketR, Slash } from '../components/AngleBrackets';
 import './ProjectList.scss';
 
-interface IProjectList {
+export interface IProjectList {
   title: string;
   projects: IProjectCard[];
 }
