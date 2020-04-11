@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import { BracketL, BracketR, Slash } from './AngleBrackets';
 import StaticBio from './StaticBio';
 import ScrollingBio from './ScrollingBio';
 import playPause from '../assets/play-pause.png';
 import './Bio.scss';
 
 export interface IBio {
-  mission: string;
   edaBio: string;
   fullstackBio: string;
 }
@@ -15,23 +15,24 @@ const Bio = () => {
   const toggleScrolling = () => setScrolling(!scrolling);
 
   const bioProps: IBio = {
-    mission: `I measure success by how I help people - customers and teammates alike. 
-      I put myself in the customer's shoes, and those perspectives guide my development. 
-      I strive to bring my full self to the team and to help others do the same. 
-      I believe great accomplishments stem from even greater teamwork.
-      We can help people by being people 🙂 `,
-    edaBio: `I worked my way to the top of EDA software engineering. 
-      I specialized in automation scripts for circuit design software. `,
-    fullstackBio: `software engineering provides new challenge and opportunity. 
-      I have the tools for success: an eye for detail, problem solving, mentoring, 
-      the knowledge that no learning curve is too steep `
+    edaBio: `My past experiences include 13 years of writing automation scripts in the semiconductor industry. 
+      This work taught me strong problem solving skills, a focus on details and (especially) how to handle learning curves. 
+      Each EDA software platform had its own proprietary scripting language and programming interface. 
+      I became an export in four platforms - one at a time. 
+      I got good at research, reading the docs, and knowing how to ask for help.
+      Now, I can handle any learning curve I need to!`,
+    fullstackBio: `I have been through some learning curves in the software industry.
+      I learned the MERN stack through the training program at Alchemy Code Lab. 
+      I am self-taught in Typescript for frontend and backend work. 
+      I'm also self taught in the Flask framework for Python servers.
+      I'm ready to keep the learning going, so please contact me with questions, feedback, and ideas.`
   }
 
   return (
     <section className='Bio'>
       <div className='appContainer'>
-        <h3>
-          <span>{'<'}</span>Hi, I'm Dave<span>{'>'}</span>
+        <h3 className='monospace'>
+          <BracketL />Background<BracketR />
         </h3>
         <h3>
           <img 
@@ -47,8 +48,8 @@ const Bio = () => {
         <StaticBio {...bioProps} />
       }
       <div className='appContainer'>
-        <h3>
-          <span>{'</'}</span>Hi<span>{'>'}</span>
+        <h3 className='monospace'>
+          <BracketL /><Slash />Background<BracketR />
         </h3>
       </div>
     </section>

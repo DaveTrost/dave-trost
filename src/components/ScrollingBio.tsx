@@ -4,7 +4,7 @@ import './ScrollingBio.scss';
 
 const toRomanNumeral = require('decimal-to-roman-converter');
 
-const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => {
+const ScrollingBio = ({edaBio, fullstackBio}: IBio) => {
   const today = new Date();
   const year = toRomanNumeral(today.getFullYear());
 
@@ -23,16 +23,16 @@ const ScrollingBio = ({mission, edaBio, fullstackBio}: IBio) => {
               EPISODE {year}
             </p>
             <p>
-              It is a period of <s>civil war</s> software development. A new mission calls. {mission}
+              It is a period of <s>civil war</s> the internet. A new mission calls: Full Stack Engineering.
             </p>
             <p>
-              In the last episode, {edaBio} 
+              {edaBio} 
             </p>
             <p>
-              In this episode, {fullstackBio} - and a trusty lightsaber.
+              {fullstackBio} 
             </p>
             <p>
-              Let's join forces and make the galaxy a better place!
+              By our forces combined, we can the galaxy a better place!
             </p>
           </div>
         </div>
