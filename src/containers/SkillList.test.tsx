@@ -1,4 +1,5 @@
 import React from 'react';
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 import { render } from '@testing-library/react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 import SkillList from './SkillList';
@@ -6,7 +7,8 @@ import SkillList from './SkillList';
 describe('Skill List content', () => {
   it('contains a component for each skill category when shallowly rendered', () => {
     const renderer = ShallowRenderer.createRenderer();
-    renderer.render(<SkillList />);
+    renderer.render(<SkillList isDisplayed={true} />);
+    mockAllIsIntersecting(true);
     const result = renderer.getRenderOutput();
     const shallowContentLevel1 = result.props.children;
     const shallowContentLevel2 = shallowContentLevel1[1].props.children;
@@ -18,14 +20,15 @@ describe('Skill List content', () => {
   });
 
   it('contains 4 specific categories', () => {
-    const { getByText } = render(<SkillList />);
-    const languagesCategory = getByText(/Languages/);
-    const frontendCategory = getByText(/Frontend/);
-    const backendCategory = getByText(/Backend/);
-    const toolsCategory = getByText(/Tools/);
-    expect(languagesCategory).toBeInTheDocument();
-    expect(frontendCategory).toBeInTheDocument();
-    expect(backendCategory).toBeInTheDocument();
-    expect(toolsCategory).toBeInTheDocument();
+    const { getByText } = render(<SkillList isDisplayed={true} />);
+    mockAllIsIntersecting(true);
+    const languagesItem = getByText(/Typescript/i);
+    const frontendItem = getByText(/Bootstrap/i);
+    const backendItem = getByText(/Express/i);
+    const toolsItem = getByText(/Github/i);
+    expect(languagesItem).toBeInTheDocument();
+    expect(frontendItem).toBeInTheDocument();
+    expect(backendItem).toBeInTheDocument();
+    expect(toolsItem).toBeInTheDocument();
   });
 });

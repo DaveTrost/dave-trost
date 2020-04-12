@@ -6,7 +6,7 @@ I started this project using technologies with which I'm familiar because I want
 
 ## TDD
 
-I practiced using 'true' TDD for this project. As in, literally, not writing component code unless there was a test in place that indicated the present code was not sufficient. I'd grade myself at 75% for sticking to the strategy. I think it was most difficult for me to use this approach when I was unsure of the content I wanted to present. I modified some tests over and over before reaching a stable state. My learning from this is to TDD the existence of a component and its larger pieces, but to leave content/implementation details out of the tests. 
+I practiced using 'true' TDD for this project. As in, literally, not writing component code unless there was a test in place that indicated the present code was not sufficient. I'd grade myself at 75% for sticking to the strategy in the first pass of the site. I think it was most difficult for me to use this approach when I was unsure of the content I wanted to present. I modified some tests over and over before reaching a stable state. My learning from this is to TDD the existence of a component and its larger pieces, but to leave content/implementation details out of the tests. 
 
 I encountered a philosphical question as I approached test-writing for user interaction. I decided to have project and technology hyperlinks that open in a separate tab and don't impact the state of the app. It is unclear if testing ths type of functionality is possible - it's browser-level functionality instigated at the app-level. I decided that this testing is outside the scope of the app.
 

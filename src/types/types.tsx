@@ -7,3 +7,7 @@ export interface IOnClickHandler {
 export interface IOnSubmitHandler {
   (event: FormEvent): void;
 }
+
+export interface IisDisplayed {
+  isDisplayed: boolean;
+}
