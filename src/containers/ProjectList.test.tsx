@@ -1,17 +1,42 @@
 import React from 'react';
-import ShallowRenderer from 'react-test-renderer/shallow';
-import ProjectList from './ProjectList';
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
+import { render } from '@testing-library/react';
+import ProjectList, { IProjectList } from './ProjectList';
+import { exampleProject } from '../components/ProjectCard.test';
+
+const testProjectList1: IProjectList = {
+  isDisplayed: true,
+  title: 'Project List 1',
+  projects: [
+    { ...exampleProject, title: 'projectABC' },
+    { ...exampleProject, title: 'projectXYZ' },
+  ],
+};
+const testProjectList2: IProjectList = {
+  isDisplayed: true,
+  title: 'Another Project List',
+  projects: [
+    { ...exampleProject, title: 'project2' },
+    { ...exampleProject, title: 'project3' },
+  ],
+};
 
 describe('Project List content', () => {
-  it('contains a sub-component for each piece of card data when shallowly rendered', () => {
-    const renderer = ShallowRenderer.createRenderer();
-    renderer.render(<ProjectList />);
-    const result = renderer.getRenderOutput();
-    const shallowContentLevel1 = result.props.children;
-    const shallowContentLevel2 = shallowContentLevel1[1].props.children;
-    expect(result.type).toBe('div');
-    expect(shallowContentLevel1[0].type).toBe('h3');
-    expect(shallowContentLevel1[1].type).toBe('div');
-    expect(shallowContentLevel2.length).toBeGreaterThanOrEqual(3);
+  it('contains the provided card data', () => {
+    const { getByText, getAllByText } = render(
+      <>
+        <ProjectList { ...testProjectList1 } />
+        <ProjectList { ...testProjectList2 } />
+      </>
+    );
+    mockAllIsIntersecting(true);
+    const titleElement1 = getAllByText(testProjectList1.title);
+    const projectTitle1 = getByText(testProjectList1.projects[0].title);
+    const titleElement2 = getAllByText(testProjectList2.title);
+    const projectTitle2 = getByText(testProjectList2.projects[0].title);
+    expect(titleElement1[0]).toBeInTheDocument();
+    expect(projectTitle1).toBeInTheDocument();
+    expect(titleElement2[0]).toBeInTheDocument();
+    expect(projectTitle2).toBeInTheDocument();
   });
 });

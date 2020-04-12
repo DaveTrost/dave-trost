@@ -9,21 +9,10 @@ describe('App contents', () => {
     const result = renderer.getRenderOutput();
     const shallowContents = result.props.children;
     expect(result.type).toBe('div');
-    expect(shallowContents).toMatchInlineSnapshot(`
-      Array [
-        <ContactForm
-          handleClose={[Function]}
-          isDisplayed={false}
-        />,
-        <Mission />,
-        <ProjectList />,
-        <SkillList />,
-        <Bio />,
-        <ContactSection
-          handleContactMe={[Function]}
-        />,
-        <FooterComp />,
-      ]
-    `);
+    expect(shallowContents.length).toBeGreaterThanOrEqual(7);
+    // Check for the footer at the very end of App
+    expect(shallowContents[shallowContents.length - 1]).toMatchInlineSnapshot(
+      `<FooterComp />`
+    );
   });
 });

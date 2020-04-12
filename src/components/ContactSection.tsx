@@ -1,19 +1,25 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer'
+import { IOnClickHandler, IisDisplayed } from '../types/types';
 import { BracketL, Slash, BracketR } from './AngleBrackets';
-import { IOnClickHandler } from '../types/types';
 import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import githubIcon from '../assets/github-contact-icon.png';
 import resumeIcon from '../assets/resume-icon.png';
 import './ContactSection.scss';
 
-interface IContactSection {
+interface IContactSection extends IisDisplayed{
   handleContactMe: IOnClickHandler;
 }
 
-function ContactSection({handleContactMe}: IContactSection) {
+function ContactSection({isDisplayed, handleContactMe}: IContactSection) {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: .2 });
+
   return (
-    <div className='appContainer contactContainer'>
+    <div
+      ref={ref} 
+      className={`appContainer contactContainer ${(isDisplayed && inView) ? 'animated fadeIn fast' : 'hiddenComponent'}`}
+    >
       <h3 className='monospace'>
         <BracketL /> Contact
       </h3>
