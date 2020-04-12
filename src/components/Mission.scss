@@ -61,8 +61,8 @@
         typing 5s 2.5s steps(5, start) forwards,
         blink 1s 2s 5;
 
-      &::before{
-        content: "";        
+      &:before{
+        content: "";
         display: inline-block;
         width: 10rem;
         font-size: 0.6em;
@@ -76,8 +76,10 @@
         border: 1px solid transparent;
         background-color: transparent;        
 
-        animation: predictive 4s;
-        animation-delay: 2.6s;
+        // -webkit-animation: predictive 4s;
+        // -webkit-animation-delay: 2.6s;
+        // animation: predictive 4s;
+        // animation-delay: 2.6s;
       }
     }
   }
@@ -105,6 +107,27 @@
   0% { border-color: white;}
   50% { border-color: transparent;}
   100% { border-color: white;}
+}
+@-webkit-keyframes predictive{
+  0% { 
+    content: "Detailed"; 
+    color: white;
+    border: 1px solid var(--text-lite);
+    background-color: var(--background-heavy);
+  }
+  25% { content: "Detailed";}
+  27% { content: "Darn Helpful";}
+  50% { content: "Darn Helpful";}
+  52% { content: "Dave";}
+  75% { content: "Dave";}
+  77% { content: "Dave";}
+  97% { 
+    content: "Dave";
+    color: white;
+    border: 1px solid var(--text-lite);
+    background-color: var(--background-heavy);
+  }
+  100% { content: "";}
 }
 @keyframes predictive{
   0% { 
