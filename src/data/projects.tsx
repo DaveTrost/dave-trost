@@ -8,9 +8,9 @@ import mindDriftTS from '../assets/mind-drift-TS.gif';
 
 export const volunteerProjects: IProjectCard[] = [
   {
-    title: 'Code for PDX - Dwellingly',
+    title: 'Dwellingly',
     imageUrl: dwellingly,
-    summary: `Social Workers and Property Managers connect to house people in need.`,
+    summary: `A Code for PDX project where Social Workers and Property Managers connect to house people in need.`,
     details: `Code for PDX is a Code for America Brigade using the web as a platform for local government and community service. 
       The Dwellingly App provides a dashboard for Social Workers who are combating local housing challenges. 
       Here they can coordinate with property owners, manage tentants, and track issues. 
