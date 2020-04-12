@@ -11,36 +11,36 @@ import Footer from './components/FooterComp';
 import './App.scss';
 
 const App = () => {
-  const [showContactForm, setShowContactForm] = useState(false);
-  const [showApp, setShowApp] = useState(false);
   const [ref, inView, entry] = useInView({ threshold: .8 });
+  const [showContactForm, setShowContactForm] = useState(false);
+  const [typingDone, setTypingDone] = useState(false);
+
+  /* The useEffect below mimics triggerOnce for the case of exiting the viewport
+    Typically, the useInView({triggerOnce}) modifier is used for this case, but it is sensitized to entering the viewport,
+    and we want to sensitize to the Mission component **exiting** the viewport
+  */
+  useEffect(() => {
+    if(entry && !inView) setTypingDone(true);
+    setTimeout(() => setTypingDone(true), typingAnimationDuration*1000 + 100);
+  }, [entry, inView]);
+
   const openContactForm = () => setShowContactForm(true);
   const closeContactForm = () => setShowContactForm(false);
-
-  useEffect(() => {
-    if(entry && !inView) setShowApp(true);
-    setTimeout(() => setShowApp(true), typingAnimationDuration*1000 + 100);
-  }, [entry, inView]);
 
   return (
     <div className='App'>
       <ContactForm isDisplayed={showContactForm} handleClose={closeContactForm} />
+      {/* This is a hack. Instead, the InView component should be used to wrap the Mission component; 
+        and it needs a callback that will execute setTypingDone */}
       <div ref={ref}>
         <Mission />
       </div>
-      {showApp && 
-        <>
-          <ProjectList title='Volunteer Work' projects={volunteerProjects} />
-          <ProjectList title='Projects' projects={personalProjects} />
-          <SkillList />
-          <Bio />
-          <ContactSection handleContactMe={openContactForm} />
-          <Footer />
-        </>
-      }
-      {!showApp && 
-        <div className='fullHeight'></div>
-      }
+      <ProjectList isDisplayed={typingDone} title='Volunteer Work' projects={volunteerProjects} />
+      <ProjectList isDisplayed={typingDone} title='Projects' projects={personalProjects} />
+      <SkillList />
+      <Bio />
+      <ContactSection handleContactMe={openContactForm} />
+      <Footer />
     </div>
   );
 }
