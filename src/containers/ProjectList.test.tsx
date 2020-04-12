@@ -1,9 +1,11 @@
 import React from 'react';
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 import { render } from '@testing-library/react';
 import ProjectList, { IProjectList } from './ProjectList';
 import { exampleProject } from '../components/ProjectCard.test';
 
 const testProjectList1: IProjectList = {
+  isDisplayed: true,
   title: 'Project List 1',
   projects: [
     { ...exampleProject, title: 'projectABC' },
@@ -11,6 +13,7 @@ const testProjectList1: IProjectList = {
   ],
 };
 const testProjectList2: IProjectList = {
+  isDisplayed: true,
   title: 'Another Project List',
   projects: [
     { ...exampleProject, title: 'project2' },
@@ -26,6 +29,7 @@ describe('Project List content', () => {
         <ProjectList { ...testProjectList2 } />
       </>
     );
+    mockAllIsIntersecting(true);
     const titleElement1 = getAllByText(testProjectList1.title);
     const projectTitle1 = getByText(testProjectList1.projects[0].title);
     const titleElement2 = getAllByText(testProjectList2.title);
