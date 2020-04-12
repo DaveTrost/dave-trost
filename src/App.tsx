@@ -37,7 +37,7 @@ const App = () => {
       </div>
       <ProjectList isDisplayed={typingDone} title='Volunteer Work' projects={volunteerProjects} />
       <ProjectList isDisplayed={typingDone} title='Projects' projects={personalProjects} />
-      <SkillList />
+      <SkillList isDisplayed={typingDone} />
       <Bio />
       <ContactSection handleContactMe={openContactForm} />
       <Footer />

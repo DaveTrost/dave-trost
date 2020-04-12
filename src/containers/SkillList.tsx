@@ -1,4 +1,6 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer'
+import { IisDisplayed } from '../types/types';
 import Skill, { ISkill } from '../components/Skill';
 import { BracketL, Slash, BracketR } from '../components/AngleBrackets';
 import { languageSkills, frontendSkills, backendSkills, otherSkills } from '../data/skills';
@@ -14,7 +16,7 @@ const SkillCategory = ({skills}: ISkillCategory) => {
     <Skill key={i} { ...props } />
   ));
   return (
-    <div className='animated fadeInUp SkillCategory'>
+    <div className='SkillCategory'>
       <div className='skillElements'>
         {skillElements}
       </div>
@@ -22,21 +24,28 @@ const SkillCategory = ({skills}: ISkillCategory) => {
   );
 }
 
-const SkillList = () => (
-  <div className='appContainer skillContainer'>
-  <h3 className='monospace'>
-    <BracketL />Skills<BracketR />
-  </h3>
-  <div className='SkillList'>
-    <SkillCategory name='Languages' skills={languageSkills} />
-    <SkillCategory name='Frontend' skills={frontendSkills} />
-    <SkillCategory name='Backend' skills={backendSkills} />
-    <SkillCategory name='Tools' skills={otherSkills} />
+const SkillList = ({isDisplayed}: IisDisplayed) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: .1 });
+
+  return (
+    <div 
+      ref={ref} 
+      className={`appContainer skillContainer ${(isDisplayed && inView) ? 'animated fadeIn fast' : 'hiddenComponent'}`}
+    >
+    <h3 className='monospace'>
+      <BracketL />Skills<BracketR />
+    </h3>
+    <div className='SkillList'>
+      <SkillCategory name='Languages' skills={languageSkills} />
+      <SkillCategory name='Frontend' skills={frontendSkills} />
+      <SkillCategory name='Backend' skills={backendSkills} />
+      <SkillCategory name='Tools' skills={otherSkills} />
+    </div>
+    <h3 className='monospace'>
+      <BracketL /><Slash />Skills<BracketR />
+    </h3>
   </div>
-  <h3 className='monospace'>
-    <BracketL /><Slash />Skills<BracketR />
-  </h3>
-</div>
-);
+  );
+}
 
 export default SkillList;
