@@ -2,13 +2,13 @@ import React from 'react';
 import { IBio } from './Bio';
 import './StaticBio.scss';
 
-const StaticBio = ({edaBio, fullstackBio}: IBio) => (
+const StaticBio = ({careerBio, personalBio}: IBio) => (
   <div className='StaticBio appContainer'>
     <p className='primary'>
-      {edaBio}
+      {careerBio}
     </p>
     <p className='secondary'>
-      {fullstackBio}
+      {personalBio}
     </p>
   </div>
 );
