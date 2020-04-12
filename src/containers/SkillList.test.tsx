@@ -19,10 +19,10 @@ describe('Skill List content', () => {
 
   it('contains 4 specific categories', () => {
     const { getByText } = render(<SkillList />);
-    const languagesCategory = getByText(/Languages/);
-    const frontendCategory = getByText(/Frontend/);
-    const backendCategory = getByText(/Backend/);
-    const toolsCategory = getByText(/Tools/);
+    const languagesCategory = getByText(/Typescript/i);
+    const frontendCategory = getByText(/Bootstrap/i);
+    const backendCategory = getByText(/Express/i);
+    const toolsCategory = getByText(/Github/i);
     expect(languagesCategory).toBeInTheDocument();
     expect(frontendCategory).toBeInTheDocument();
     expect(backendCategory).toBeInTheDocument();

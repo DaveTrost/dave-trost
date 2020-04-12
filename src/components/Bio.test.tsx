@@ -5,7 +5,7 @@ import Bio from './Bio';
 describe('Bio component', () => {
   it('renders some information about me', () => {
     const { getAllByText } = render(<Bio />);
-    const headerElements = getAllByText(/Background/);
+    const headerElements = getAllByText(/About Me/);
     expect(headerElements[0]).toBeInTheDocument();
   });
 });
