@@ -35,8 +35,8 @@ const ScrollingBio = ({careerBio, personalBio}: IBio) => {
               {careerBio} 
             </p>
             <p>
-              When I'm not saving the galaxy with my technical skills, I have a few things that keep me busy.
-              {personalBio} 
+              When I'm not saving the galaxy with my technical skills, 
+              I have a few things that keep me busy. {personalBio}
             </p>
           </div>
         </div>
