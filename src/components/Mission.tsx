@@ -3,7 +3,7 @@ import './Mission.scss';
 import { BracketL, BracketR, Slash } from './AngleBrackets';
 
 export const typingAnimationDuration = 7;
-const enterAfterTyping = `animated fadeInUp delay-${typingAnimationDuration}s`;
+const enterAfterTyping = `animated fadeIn fast delay-${typingAnimationDuration}s`;
 
 const Mission = () => (
   <section className='Mission'>

@@ -34,7 +34,7 @@ const ContactForm = ({isDisplayed, handleClose}: IContactForm) => {
 
   return (
     <section 
-      className={`animated fadeInUp ${ContactFormClassName} ${isDisplayed ? 'visible' : 'hidden'}`}
+      className={`animated fadeInUp fast ${ContactFormClassName} ${isDisplayed ? 'visible' : 'hidden'}`}
       onClick={cancelForm}
     >
       <div className='appContainer formArea'>
