@@ -38,8 +38,8 @@ const App = () => {
       <ProjectList isDisplayed={typingDone} title='Volunteer Work' projects={volunteerProjects} />
       <ProjectList isDisplayed={typingDone} title='Projects' projects={personalProjects} />
       <SkillList isDisplayed={typingDone} />
-      <Bio />
-      <ContactSection handleContactMe={openContactForm} />
+      <Bio isDisplayed={typingDone} />
+      <ContactSection isDisplayed={typingDone} handleContactMe={openContactForm} />
       <Footer />
     </div>
   );

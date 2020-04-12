@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer'
+import { IisDisplayed } from '../types/types';
 import { BracketL, BracketR, Slash } from './AngleBrackets';
 import StaticBio from './StaticBio';
 import ScrollingBio from './ScrollingBio';
@@ -10,7 +12,8 @@ export interface IBio {
   personalBio: string;
 }
 
-const Bio = () => {
+const Bio = ({isDisplayed}: IisDisplayed) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: .2 });
   const [scrolling, setScrolling] = useState(false);
   const toggleScrolling = () => setScrolling(!scrolling);
 
@@ -29,7 +32,10 @@ const Bio = () => {
   }
 
   return (
-    <section className='animated fadeInUp Bio'>
+    <section 
+      ref={ref} 
+      className={`Bio ${(isDisplayed && inView) ? 'animated fadeIn fast' : 'hiddenComponent'}`}
+    >
       <div className='appContainer'>
         <h3 className='monospace'>
           <BracketL />About Me<BracketR />
