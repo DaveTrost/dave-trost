@@ -9,21 +9,15 @@ interface ISkillCategory {
   skills: ISkill[];
 }
 
-const SkillCategory = ({name, skills}: ISkillCategory) => {
+const SkillCategory = ({skills}: ISkillCategory) => {
   const skillElements = skills.map((props: ISkill, i: number) => (
     <Skill key={i} { ...props } />
   ));
   return (
     <div className='animated fadeInUp SkillCategory'>
-      <h3 className='categoryHeader monospace'>
-        <BracketL />{name}
-      </h3>
       <div className='skillElements'>
         {skillElements}
       </div>
-      <h3 className='categoryHeader monospace'>
-        <Slash /><BracketR />
-      </h3>
     </div>
   );
 }
