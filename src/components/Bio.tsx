@@ -34,13 +34,17 @@ const Bio = () => {
         <h3 className='monospace'>
           <BracketL />Background<BracketR />
         </h3>
-        <h3>
-          <img 
-            onClick={toggleScrolling} 
-            className={scrolling ? 'pauseSprite' : 'playSprite'}
-            src={playPause}
-            alt={scrolling ? 'pause button' : 'play button'}
-          />
+        <h3 onClick={toggleScrolling} className='controls'>
+          <figure>
+            <img 
+              className={scrolling ? 'pauseSprite' : 'playSprite'}
+              src={playPause}
+              alt={scrolling ? 'pause button' : 'play button'}
+            />
+            <figcaption>
+              {scrolling? 'Close Animation' : 'Play as Animation'}
+            </figcaption>
+          </figure>
         </h3>
       </div>
       {scrolling ?
