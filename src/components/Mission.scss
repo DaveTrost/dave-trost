@@ -3,20 +3,36 @@
   padding-bottom: 20px;
 
   h3 {
+    position: relative;
+
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     color: var(--function);
     height: 1em;
 
-    &::after {
-      content: "";
-      height: 1em;
-      display: block;
+    .cursor {
+      width: 0;
+      height: 100%;
+      border-right: .1em solid transparent;
+      -webkit-animation: blink ease 1s infinite;
+      animation: blink ease 1s infinite;
     }
 
-    .addSpaceRight {
-      margin-right: .8em;
+    .predictive {
+      position: absolute;
+      top: 2em;
+
+      display: inline-block;
+      width: 10rem;
+      font-size: 0.6em;
+      
+      overflow-x: visible;
+      white-space: nowrap;
+      
+      color: white;
+      border: 1px solid var(--text-lite);
+      background-color: var(--background-heavy);
     }
   }
 
@@ -28,125 +44,16 @@
   
     color: var(--name-lite);
   }
-
-  /* CSS typing animations are from my code pen
-    https://codepen.io/davetrost/pen/ExjqQMK?editors=1100 */    
-  .typing {
-    position: relative;
-    float: left;
-
-    .cursor {
-      position: absolute;
-      top: 0;
-      left: calc(0% + 0.05em);
-      right: 0;
-      height: 100%;
-      background: var(--background);
-      border-left: .1em solid transparent;
-    }
-    
-    .type-fast {
-      -webkit-animation: 
-        typing 2s steps(8) forwards, 
-        blink 1s 2;
-      animation: 
-        typing 2s steps(8) forwards, 
-        blink 1s 2;
-    }
-    .type-slow {
-      -webkit-animation: 
-        typing 5s 2.5s steps(5, start) forwards,
-        blink 1s 2s 5;
-      animation: 
-        typing 5s 2.5s steps(5, start) forwards,
-        blink 1s 2s 5;
-
-      &:before{
-        content: "";
-        display: inline-block;
-        width: 10rem;
-        font-size: 0.6em;
-        
-        position: relative;
-        top: 1em;
-        overflow-x: visible;
-        white-space: nowrap;
-        
-        color: transparent;
-        border: 1px solid transparent;
-        background-color: transparent;        
-
-        // -webkit-animation: predictive 4s;
-        // -webkit-animation-delay: 2.6s;
-        // animation: predictive 4s;
-        // animation-delay: 2.6s;
-      }
-    }
-  }
-} 
+}
 
 /* Animation */
-@-webkit-keyframes typing{
-  from { width: 100%;}
-  to { width: 0;}
-}
 @-webkit-keyframes blink{
   0% { border-color: white;}
   50% { border-color: transparent;}
   100% { border-color: white;}
 }
-@keyframes typing{
-  from{ 
-    left: calc(0% + 0.05em);
-  }
-  to{ 
-    left: calc(100% + 0.05em);
-  }
-}
 @keyframes blink{
   0% { border-color: white;}
   50% { border-color: transparent;}
   100% { border-color: white;}
-}
-@-webkit-keyframes predictive{
-  0% { 
-    content: "Detailed"; 
-    color: white;
-    border: 1px solid var(--text-lite);
-    background-color: var(--background-heavy);
-  }
-  25% { content: "Detailed";}
-  27% { content: "Darn Helpful";}
-  50% { content: "Darn Helpful";}
-  52% { content: "Dave";}
-  75% { content: "Dave";}
-  77% { content: "Dave";}
-  97% { 
-    content: "Dave";
-    color: white;
-    border: 1px solid var(--text-lite);
-    background-color: var(--background-heavy);
-  }
-  100% { content: "";}
-}
-@keyframes predictive{
-  0% { 
-    content: "Detailed"; 
-    color: white;
-    border: 1px solid var(--text-lite);
-    background-color: var(--background-heavy);
-  }
-  25% { content: "Detailed";}
-  27% { content: "Darn Helpful";}
-  50% { content: "Darn Helpful";}
-  52% { content: "Dave";}
-  75% { content: "Dave";}
-  77% { content: "Dave";}
-  97% { 
-    content: "Dave";
-    color: white;
-    border: 1px solid var(--text-lite);
-    background-color: var(--background-heavy);
-  }
-  100% { content: "";}
 }

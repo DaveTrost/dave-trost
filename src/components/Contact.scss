@@ -1,0 +1,15 @@
+.Contact {
+  display: inline;    
+  margin-left: 2vw;
+  margin-right: 2vw;
+
+  button {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  img {
+    height: calc(40px + 1vw);
+  }
+}
