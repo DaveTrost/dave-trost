@@ -49,9 +49,9 @@ Netlify provides a backend functionality for [form submissions](https://docs.net
 
 I was tipped off to this Netlify feature by inspecting the source code on [Marcy Silverman's portfolio site](www.marcy-silverman.com) (Thanks Marcy!).
 
-## Future Work: Use Intersection Observer
+## Use Intersection Observer
 
-React Intersection Observer provides an indication of when a component enters the viewport. The viewport is the area of the screen visible to the user, and it changes as the user scrolls through the page. The main way I've seen this used is to delay the loading of a component until it is at the edge of visibility. This probably has some performance benefits and it has the nice side effect that on-entrance animations can actually be perceived by users.   
+React Intersection Observer provides an indication of when a component enters the viewport. The viewport is the area of the screen visible to the user, and it changes as the user scrolls through the page. I've seen this used to delay the loading of a component until it is at the edge of visibility. I used the library in the same way. I delay the on-entrance animations for the different sections of my page until the section in question is visible. This results in the components being less "choppy" as they enter the viewport - especially if the user is scrolling quickly.
 
 ## Future Work: More Pages and a Navigation Bar
 
