@@ -163,23 +163,23 @@
   /* Scroll animation - note: start point should be 150% the height of ScrollingBio */
   @-webkit-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -180vh; }
+    100% { top: -200vh; }
   }
   @-moz-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -180vh; }
+    100% { top: -200vh; }
   }
   @-ms-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -180vh; }
+    100% { top: -200vh; }
   }
   @-o-keyframes scroll {
     0% { top: 450px; }
-    100% { top: -180vh; }
+    100% { top: -200vh; }
   }
   @keyframes scroll {
     0% { top: 450px; }
-    100% { top: -180vh; }
+    100% { top: -200vh; }
   }
 
   /* Fade in animation for intro */
