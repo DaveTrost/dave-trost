@@ -44,11 +44,9 @@ const Mission = ({handleDoneTyping}: IMission) => {
           <span className={predictiveText ? 'predictive' : 'hiddenComponent'}>{predictiveText}</span>
         </h3>
         <p className={`${!isTyping ? 'animated fadeIn fast' : 'hiddenComponent'}`}>
-          I write software as an avenue to help others. 
-          The software helps the customers, and that motivates my work.
-          And it's more than that. 
-          For me, software is about the connections I make while building it. 
-          I love how development brings people together and offers a platform for us to collaborate - 
+          I code because software helps people, and that motivates me.
+          More than that, for me, software is about the connections I make while building it. 
+          I love how software development brings people together and offers a platform for us to collaborate - 
           about the code, the product, and its impact on lives. 
           So if you code, or use software, or live life, I'm glad to help! 
         </p>
