@@ -4,7 +4,7 @@ import ProjectList from './containers/ProjectList';
 import { volunteerProjects, personalProjects } from './data/projects';
 import SkillList from './containers/SkillList';
 import Bio from './components/Bio';
-import ContactSection from './components/ContactSection';
+import ContactSection from './containers/ContactSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/FooterComp';
 import './App.scss';
